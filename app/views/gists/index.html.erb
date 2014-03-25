@@ -1,31 +1,36 @@
-<h1>Listing gists</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Snippet</th>
-      <th>Lang</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @gists.each do |gist| %>
-      <tr>
-        <td><%= gist.snippet %></td>
-        <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
-        <td><%= link_to 'Show', gist %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist) %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Gist', new_gist_path %>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Snippet</th>
+          <th>Lang</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% i = 0 %>
+        <% @gists.each do |gist| %>
+        <tr class="my-row" >
+          <td><%= i = i + 1 %></td>
+          <td><% if gist.snippet.length < 15 %>
+            <%= gist.snippet %>
+            <% else %>
+            <%= gist.snippet[0,13] + "..."%>
+            <% end %> </td>
+          <td><%= gist.lang %></td>
+          <td><%= gist.description %></td>
+          <td> <div class ="btn-group"> 
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action</button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href='<%= edit_gist_path(gist) %>'>Edit</a></li>
+              <li><a href='/gists/<%= gist.id %>'>Show</a></li>
+              <li><%= link_to 'Delete', gist, method: :delete, data: { confirm: 'Are you sure?'}  %>'></li>
+            </ul>
+          </div></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
