@@ -1,7 +1,7 @@
 Modyfikacje:
 
--Dodany bootstrap
--Zmieniony widok
+* Dodany bootstrap
+* Zmieniony widok
 -Ucinanie zbyt długich snippetów w widoku ogólnym
 -Więcej funkcjonalności będzie dodanych w przyszłości
 
