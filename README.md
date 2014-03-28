@@ -10,3 +10,5 @@
 * redcarpet '3.1.1'
 * sass-rails '4.0.1'
 * bootstrap-sass '3.1.1.0'
+
+#[Heroku Link](https://just-some-gists.herokuapp.com)
