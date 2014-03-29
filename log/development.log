@@ -5269,3 +5269,2208 @@ Processing by GistsController#index as HTML
   Rendered gists/index.html.erb within layouts/application (15.2ms)
   Rendered layouts/_navbar.html.erb (0.2ms)
 Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-28 11:17:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 470ms (Views: 442.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:03:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/kuba/my_gists/app/controllers/gists_controller.rb:79: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.3) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__255056251__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:08 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.7ms)
+  Rendered gists/index.html.haml within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= post.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:28 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.7ms)
+  Rendered gists/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:30 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (1.3ms)
+  Rendered gists/index.html.haml within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:31 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.6ms)
+  Rendered gists/index.html.haml within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:31 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.5ms)
+  Rendered gists/index.html.haml within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:32 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.6ms)
+  Rendered gists/index.html.haml within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:34 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (1.2ms)
+  Rendered gists/index.html.haml within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:35 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.6ms)
+  Rendered gists/index.html.haml within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:04:35 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.8ms)
+  Rendered gists/index.html.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:2
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:05:29 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.7ms)
+  Rendered gists/index.html.haml within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Inconsistent indentation: " \t" used for indentation, but the rest of the document was indented using 1 space.):
+    1: - gists.each do |gist|
+    2:  .gist
+    3:  	= gist.contents
+  app/views/shared/_gists.html.haml:3
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:05:43 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (8.9ms)
+  Rendered gists/index.html.haml within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Inconsistent indentation: " \t" used for indentation, but the rest of the document was indented using 1 space.):
+    1: - gists.each do |gist|
+    2:  .gist
+    3:  	= gist.snippet
+  app/views/shared/_gists.html.haml:3
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:05:44 +0100
+Processing by GistsController#index as HTML
+  Rendered shared/_gists.html.haml (0.6ms)
+  Rendered gists/index.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (Inconsistent indentation: " \t" used for indentation, but the rest of the document was indented using 1 space.):
+    1: - gists.each do |gist|
+    2:  .gist
+    3:  	= gist.snippet
+  app/views/shared/_gists.html.haml:3
+  app/views/gists/index.html.haml:2:in `_app_views_gists_index_html_haml___449160219__619669218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:06:10 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (22.3ms)
+  Rendered gists/index.html.haml within layouts/application (25.7ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 773ms (Views: 770.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-03-29 21:06:16 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 5
+  Rendered shared/_gists.html.haml (2.4ms)
+  Rendered gists/index.js.haml (5.2ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:06:33 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (9.5ms)
+  Rendered gists/index.html.haml within layouts/application (14.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:06:34 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (2.2ms)
+  Rendered gists/index.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:06:35 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (10.4ms)
+  Rendered gists/index.html.haml within layouts/application (17.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-03-29 21:06:46 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 5 OFFSET 5[0m
+  Rendered shared/_gists.html.haml (1.3ms)
+  Rendered gists/index.js.haml (2.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:11:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.0ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (15.3ms)
+  Rendered gists/index.html.haml within layouts/application (19.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 307ms (Views: 279.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396123864977" for 127.0.0.1 at 2014-03-29 21:11:05 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396123864977"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 5
+  Rendered shared/_gists.html.haml (4.3ms)
+  Rendered gists/index.js.haml (7.6ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (21.2ms)[0m  [1mCREATE TABLE "gists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "snippet" text, "lang" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (62.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (31.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (33.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140309125812')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+public static void reset(Pole[][] plansza, Robot robot) {
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			plansza[i][j].getSciezki().clear();
+			}
+	}
+	robot.setPoz(plansza[1][1]);
+	robot.getPoprzedniePola().clear();
+	robot.iloscKrokow = 0;
+}' AND "gists"."lang" = 'java' AND "gists"."description" = 'test' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (36.6ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "test"], ["lang", "java"], ["snippet", "\npublic static void reset(Pole[][] plansza, Robot robot) {\n\tfor (int i = 0; i < 5; i++) {\n\t\tfor (int j = 0; j < 5; j++) {\n\t\t\tplansza[i][j].getSciezki().clear();\n\t\t\t}\n\t}\n\trobot.setPoz(plansza[1][1]);\n\trobot.getPoprzedniePola().clear();\n\trobot.iloscKrokow = 0;\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (26.0ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+System.out.println(''*************************************************************'');
+int rozmX = 5;
+int rozmY = 5;
+int udane = 0;' AND "gists"."lang" = 'java' AND "gists"."description" = 'das' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "das"], ["lang", "java"], ["snippet", "\nSystem.out.println('*************************************************************');\nint rozmX = 5;\nint rozmY = 5;\nint udane = 0;"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+public Form1()
+{
+	InitializeComponent();
+}' AND "gists"."lang" = 'c#' AND "gists"."description" = 'fd' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "fd"], ["lang", "c#"], ["snippet", "\npublic Form1()\n{\n\tInitializeComponent();\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (26.5ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+void zabezpieczenie2(){
+//Tu funkcja zabezpieczająca wieksze statki!!
+}' AND "gists"."lang" = 'c' AND "gists"."description" = 'ffffffff' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "ffffffff"], ["lang", "c"], ["snippet", "\nvoid zabezpieczenie2(){\n//Tu funkcja zabezpieczająca wieksze statki!!\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+if(tab[x][y] == 0){
+	tab[x][y] = 1;
+	zabezpieczenie2();
+}' AND "gists"."lang" = 'c' AND "gists"."description" = 'cxxc' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "cxxc"], ["lang", "c"], ["snippet", "\nif(tab[x][y] == 0){\n\ttab[x][y] = 1;\n\tzabezpieczenie2();\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (30.6ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = 'console.log(''cos'');' AND "gists"."lang" = 'javascript' AND "gists"."description" = 'x' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "x"], ["lang", "javascript"], ["snippet", "console.log('cos');"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (10.1ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+def nazwa
+	i=0 
+end' AND "gists"."lang" = 'ruby' AND "gists"."description" = 'test2' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "test2"], ["lang", "ruby"], ["snippet", "\ndef nazwa\n\ti=0 \nend"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (23.5ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+if i > 1
+	i++
+end' AND "gists"."lang" = 'ruby' AND "gists"."description" = 'test' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nif i > 1\n\ti++\nend"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (15.3ms)[0m  commit transaction
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."snippet" = '
+books.each do |attr|
+	puts ''cos'' 
+end' AND "gists"."lang" = 'ruby' AND "gists"."description" = 'test' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nbooks.each do |attr|\n\tputs 'cos' \nend"], ["updated_at", Sat, 29 Mar 2014 20:16:06 UTC +00:00]]
+  [1m[35m (18.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "test"], ["lang", "java"], ["snippet", "\npublic static void reset(Pole[][] plansza, Robot robot) {\n\tfor (int i = 0; i < 5; i++) {\n\t\tfor (int j = 0; j < 5; j++) {\n\t\t\tplansza[i][j].getSciezki().clear();\n\t\t\t}\n\t}\n\trobot.setPoz(plansza[1][1]);\n\trobot.getPoprzedniePola().clear();\n\trobot.iloscKrokow = 0;\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[35m (15.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "das"], ["lang", "java"], ["snippet", "\nSystem.out.println('*************************************************************');\nint rozmX = 5;\nint rozmY = 5;\nint udane = 0;"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[36m (30.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "fd"], ["lang", "c#"], ["snippet", "\npublic Form1()\n{\n\tInitializeComponent();\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[35m (33.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "ffffffff"], ["lang", "c"], ["snippet", "\nvoid zabezpieczenie2(){\n//Tu funkcja zabezpieczająca wieksze statki!!\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "cxxc"], ["lang", "c"], ["snippet", "\nif(tab[x][y] == 0){\n\ttab[x][y] = 1;\n\tzabezpieczenie2();\n}"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[35m (24.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "x"], ["lang", "javascript"], ["snippet", "console.log('cos');"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[36m (25.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "test2"], ["lang", "ruby"], ["snippet", "\ndef nazwa\n\ti=0 \nend"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[35m (30.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nif i > 1\n\ti++\nend"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[36m (26.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nbooks.each do |attr|\n\tputs 'cos' \nend"], ["updated_at", Sat, 29 Mar 2014 20:16:58 UTC +00:00]]
+  [1m[35m (15.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:00 UTC +00:00], ["description", "test"], ["lang", "java"], ["snippet", "\npublic static void reset(Pole[][] plansza, Robot robot) {\n\tfor (int i = 0; i < 5; i++) {\n\t\tfor (int j = 0; j < 5; j++) {\n\t\t\tplansza[i][j].getSciezki().clear();\n\t\t\t}\n\t}\n\trobot.setPoz(plansza[1][1]);\n\trobot.getPoprzedniePola().clear();\n\trobot.iloscKrokow = 0;\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:00 UTC +00:00]]
+  [1m[35m (13.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "das"], ["lang", "java"], ["snippet", "\nSystem.out.println('*************************************************************');\nint rozmX = 5;\nint rozmY = 5;\nint udane = 0;"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[36m (42.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "fd"], ["lang", "c#"], ["snippet", "\npublic Form1()\n{\n\tInitializeComponent();\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[35m (15.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "ffffffff"], ["lang", "c"], ["snippet", "\nvoid zabezpieczenie2(){\n//Tu funkcja zabezpieczająca wieksze statki!!\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[36m (29.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "cxxc"], ["lang", "c"], ["snippet", "\nif(tab[x][y] == 0){\n\ttab[x][y] = 1;\n\tzabezpieczenie2();\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[35m (30.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "x"], ["lang", "javascript"], ["snippet", "console.log('cos');"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "test2"], ["lang", "ruby"], ["snippet", "\ndef nazwa\n\ti=0 \nend"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[35m (27.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nif i > 1\n\ti++\nend"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[36m (15.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nbooks.each do |attr|\n\tputs 'cos' \nend"], ["updated_at", Sat, 29 Mar 2014 20:17:01 UTC +00:00]]
+  [1m[35m (23.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "test"], ["lang", "java"], ["snippet", "\npublic static void reset(Pole[][] plansza, Robot robot) {\n\tfor (int i = 0; i < 5; i++) {\n\t\tfor (int j = 0; j < 5; j++) {\n\t\t\tplansza[i][j].getSciezki().clear();\n\t\t\t}\n\t}\n\trobot.setPoz(plansza[1][1]);\n\trobot.getPoprzedniePola().clear();\n\trobot.iloscKrokow = 0;\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[35m (29.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "das"], ["lang", "java"], ["snippet", "\nSystem.out.println('*************************************************************');\nint rozmX = 5;\nint rozmY = 5;\nint udane = 0;"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[36m (25.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "fd"], ["lang", "c#"], ["snippet", "\npublic Form1()\n{\n\tInitializeComponent();\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[35m (29.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "ffffffff"], ["lang", "c"], ["snippet", "\nvoid zabezpieczenie2(){\n//Tu funkcja zabezpieczająca wieksze statki!!\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[36m (22.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "cxxc"], ["lang", "c"], ["snippet", "\nif(tab[x][y] == 0){\n\ttab[x][y] = 1;\n\tzabezpieczenie2();\n}"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[35m (20.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "x"], ["lang", "javascript"], ["snippet", "console.log('cos');"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[36m (17.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "test2"], ["lang", "ruby"], ["snippet", "\ndef nazwa\n\ti=0 \nend"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[35m (29.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nif i > 1\n\ti++\nend"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[36m (38.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00], ["description", "test"], ["lang", "ruby"], ["snippet", "\nbooks.each do |attr|\n\tputs 'cos' \nend"], ["updated_at", Sat, 29 Mar 2014 20:17:03 UTC +00:00]]
+  [1m[35m (15.5ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:17:16 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (11.7ms)
+  Rendered gists/index.html.haml within layouts/application (17.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 165ms (Views: 136.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists?page=2&_=1396124236552" for 127.0.0.1 at 2014-03-29 21:17:16 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396124236552"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (2.9ms)
+  Rendered gists/index.js.haml (6.0ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists?page=3" for 127.0.0.1 at 2014-03-29 21:17:23 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (2.2ms)
+  Rendered gists/index.js.haml (3.3ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=4&_=1396124236553" for 127.0.0.1 at 2014-03-29 21:17:24 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1396124236553"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 15
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (2.1ms)
+  Rendered gists/index.js.haml (3.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=5&_=1396124236554" for 127.0.0.1 at 2014-03-29 21:17:24 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"5", "_"=>"1396124236554"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 20
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (8.1ms)
+  Rendered gists/index.js.haml (9.7ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=6&_=1396124236555" for 127.0.0.1 at 2014-03-29 21:17:25 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"6", "_"=>"1396124236555"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 25
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (5.3ms)
+  Rendered gists/index.js.haml (9.4ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=7&_=1396124236556" for 127.0.0.1 at 2014-03-29 21:17:26 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"7", "_"=>"1396124236556"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 30
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.haml (2.8ms)
+  Rendered gists/index.js.haml (8.0ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=8&_=1396124236557" for 127.0.0.1 at 2014-03-29 21:17:26 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"8", "_"=>"1396124236557"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 5 OFFSET 35
+  Rendered shared/_gists.html.haml (7.0ms)
+  Rendered gists/index.js.haml (9.8ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:17:41 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (3.1ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (8.5ms)
+  Rendered gists/index.html.haml within layouts/application (16.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 38.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/gists?page=2&_=1396124261295" for 127.0.0.1 at 2014-03-29 21:17:41 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396124261295"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 5 OFFSET 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (4.8ms)
+  Rendered gists/index.js.haml (6.6ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:18:10 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (14.2ms)
+  Rendered gists/index.html.haml within layouts/application (15.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists?page=2&_=1396124290365" for 127.0.0.1 at 2014-03-29 21:18:10 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396124290365"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (2.1ms)
+  Rendered gists/index.js.haml (4.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3&_=1396124290366" for 127.0.0.1 at 2014-03-29 21:18:12 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396124290366"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.haml (3.1ms)
+  Rendered gists/index.js.haml (10.6ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists?page=4&_=1396124290367" for 127.0.0.1 at 2014-03-29 21:18:13 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1396124290367"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30[0m
+  Rendered shared/_gists.html.haml (3.2ms)
+  Rendered gists/index.js.haml (4.7ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:21:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (11.3ms)
+  Rendered gists/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 157ms (Views: 132.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:21:51 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (11.9ms)
+  Rendered gists/index.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396124511368" for 127.0.0.1 at 2014-03-29 21:21:51 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396124511368"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (5.0ms)
+  Rendered gists/index.js.haml (8.3ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=3&_=1396124511369" for 127.0.0.1 at 2014-03-29 21:21:52 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396124511369"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (7.5ms)
+  Rendered gists/index.js.haml (8.9ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=4&_=1396124511370" for 127.0.0.1 at 2014-03-29 21:21:53 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1396124511370"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (1.2ms)
+  Rendered gists/index.js.haml (4.0ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:24:54 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (14.1ms)
+  Rendered gists/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:25:40 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (12.6ms)
+  Rendered gists/index.html.erb within layouts/application (14.2ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Completed 200 OK in 2569ms (Views: 2567.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:26:28 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (14.5ms)
+  Rendered gists/index.html.erb within layouts/application (16.0ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Completed 200 OK in 2214ms (Views: 2212.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:28:25 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (5.6ms)
+  Rendered gists/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=2&_=1396124905366" for 127.0.0.1 at 2014-03-29 21:28:25 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396124905366"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (4.2ms)
+  Rendered gists/index.js.haml (5.7ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=3&_=1396124905367" for 127.0.0.1 at 2014-03-29 21:28:26 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396124905367"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (3.1ms)
+  Rendered gists/index.js.haml (6.0ms)
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists?page=4&_=1396124905368" for 127.0.0.1 at 2014-03-29 21:28:27 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1396124905368"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30[0m
+  Rendered shared/_gists.html.erb (2.1ms)
+  Rendered gists/index.js.haml (3.2ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:30:48 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (15.2ms)
+  Rendered gists/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396125048794" for 127.0.0.1 at 2014-03-29 21:31:02 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396125048794"}
+  [1m[35mGist Load (0.0ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (2.8ms)
+  Rendered gists/index.js.haml (4.9ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists?page=3&_=1396125048795" for 127.0.0.1 at 2014-03-29 21:31:07 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396125048795"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (1.9ms)
+  Rendered gists/index.js.haml (3.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=4&_=1396125048796" for 127.0.0.1 at 2014-03-29 21:31:29 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1396125048796"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (2.1ms)
+  Rendered gists/index.js.haml (3.4ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:32:00 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (10.5ms)
+  Rendered gists/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:33:29 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (9.8ms)
+  Rendered gists/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 21:33:30 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (50.1ms)
+  Rendered gists/new.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:33:43 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (3.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (6.6ms)
+  Rendered gists/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:36:48 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (9.1ms)
+  Rendered gists/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 44ms (Views: 36.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:37:56 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (10.2ms)
+  Rendered gists/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 40ms (Views: 33.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:28 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (14.2ms)
+  Rendered gists/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/1/edit" for 127.0.0.1 at 2014-03-29 21:41:29 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (1.9ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered gists/_form.html.erb (8.3ms)
+  Rendered gists/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:33 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (6.2ms)
+  Rendered gists/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/1/edit" for 127.0.0.1 at 2014-03-29 21:41:35 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered gists/_form.html.erb (12.1ms)
+  Rendered gists/edit.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:37 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (15.7ms)
+  Rendered gists/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/gists/1" for 127.0.0.1 at 2014-03-29 21:41:39 +0100
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z6JEZMzLoWw9k+HrCFrVEYIZO3rVZKrMo6ADMF2B/TE=", "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.9ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 1]]
+  [1m[35m (28.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 35ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:39 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (6.1ms)
+  Rendered gists/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/gists/4" for 127.0.0.1 at 2014-03-29 21:41:43 +0100
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z6JEZMzLoWw9k+HrCFrVEYIZO3rVZKrMo6ADMF2B/TE=", "id"=>"4"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 4]]
+  [1m[35m (30.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 34ms (ActiveRecord: 31.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:43 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (13.8ms)
+  Rendered gists/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/gists/8" for 127.0.0.1 at 2014-03-29 21:41:46 +0100
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z6JEZMzLoWw9k+HrCFrVEYIZO3rVZKrMo6ADMF2B/TE=", "id"=>"8"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 8]]
+  [1m[35m (16.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 24ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:46 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (16.8ms)
+  Rendered gists/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/gists/2" for 127.0.0.1 at 2014-03-29 21:41:52 +0100
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z6JEZMzLoWw9k+HrCFrVEYIZO3rVZKrMo6ADMF2B/TE=", "id"=>"2"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 2]]
+  [1m[35m (19.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 26ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-29 21:41:52 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (7.0ms)
+  Rendered gists/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/6/edit" for 127.0.0.1 at 2014-03-29 21:41:58 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered gists/_form.html.erb (2.4ms)
+  Rendered gists/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists/6/edit" for 127.0.0.1 at 2014-03-29 21:42:19 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.0ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered gists/_form.html.erb (2.8ms)
+  Rendered gists/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/6/edit" for 127.0.0.1 at 2014-03-29 21:42:33 +0100
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered gists/_form.html.erb (22.0ms)
+  Rendered gists/edit.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 63ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:42:34 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (7.2ms)
+  Rendered gists/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:44:01 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (1.0ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (12.2ms)
+  Rendered gists/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined local variable or method `projects_path' for #<#<Class:0xb6471ed4>:0xb3d48308>):
+    16:         </ul>
+    17: 
+    18: 
+    19: <% form_tag projects_path, :method => 'get' do %>
+    20:   <p>
+    21:     <%= text_field_tag :search, params[:search] %>
+    22:     <%= submit_tag "Search", :name => nil %>
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___70223347__638962558'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:45:10 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (10.2ms)
+  Rendered gists/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:45:30 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (19.1ms)
+  Rendered gists/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:46:44 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (1.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (9.2ms)
+  Rendered gists/index.html.erb within layouts/application (15.6ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9899c08>
+
+Completed 200 OK in 2242ms (Views: 2239.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:48:35 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (15.3ms)
+  Rendered gists/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:49:05 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (19.4ms)
+  Rendered gists/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:49:16 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (21.8ms)
+  Rendered gists/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:51:59 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (13.1ms)
+  Rendered gists/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:52:01 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (20.8ms)
+  Rendered gists/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:53:21 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (12.4ms)
+  Rendered gists/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:55:26 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (13.8ms)
+  Rendered gists/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 47ms (Views: 37.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:55:34 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (11.7ms)
+  Rendered gists/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=fd" for 127.0.0.1 at 2014-03-29 21:56:14 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"fd"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (13.3ms)
+  Rendered gists/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=cxxc" for 127.0.0.1 at 2014-03-29 21:56:24 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"cxxc"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (21.6ms)
+  Rendered gists/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 21:56:52 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (21.3ms)
+  Rendered gists/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 21:56:53 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (25.9ms)
+  Rendered gists/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 21:56:54 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (15.4ms)
+  Rendered gists/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 21:58:14 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (19.3ms)
+  Rendered gists/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 175ms (Views: 148.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 21:58:26 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (19.9ms)
+  Rendered gists/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:00:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (21.0ms)
+  Rendered gists/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 173ms (Views: 147.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 22:01:10 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (8.2ms)
+  Rendered gists/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 22:04:46 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (17.4ms)
+  Rendered gists/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 22:04:50 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (4.4ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (11.6ms)
+  Rendered gists/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/?search=adsdas" for 127.0.0.1 at 2014-03-29 22:04:52 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"adsdas"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (12.8ms)
+  Rendered gists/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=adsdas" for 127.0.0.1 at 2014-03-29 22:20:08 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"adsdas"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (description LIKE '%adsdas%')
+  Rendered shared/_gists.html.erb (0.0ms)
+  Rendered gists/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `next_page' for []:Array):
+    1: <div class="gists">
+    2:   <%= render :partial => 'shared/gists', :locals => { :gists => @gists } %>
+    3: </div>
+    4: <%= link_to 'Load More Gists', gists_path(:page => @gists.next_page), :class => 'load-more-gists', :remote => true if @gists.next_page %>
+  app/views/gists/index.html.erb:4:in `_app_views_gists_index_html_erb__517679481__620489758'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.5ms)
+
+
+Started GET "/?search=adsdas" for 127.0.0.1 at 2014-03-29 22:23:10 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"adsdas"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (lang LIKE '%adsdas%') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (0.1ms)
+  Rendered gists/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=adsdas" for 127.0.0.1 at 2014-03-29 22:23:13 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"adsdas"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE (lang LIKE '%adsdas%') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (0.1ms)
+  Rendered gists/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?search=java" for 127.0.0.1 at 2014-03-29 22:23:22 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"java"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (lang LIKE '%java%') LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists" WHERE (lang LIKE '%java%')
+  Rendered shared/_gists.html.erb (5.9ms)
+  Rendered gists/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 36ms (Views: 20.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?search=java" for 127.0.0.1 at 2014-03-29 22:23:38 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"java"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (description LIKE '%java%') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (0.1ms)
+  Rendered gists/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-03-29 22:23:43 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (description LIKE '%test%') LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists" WHERE (description LIKE '%test%')[0m
+  Rendered shared/_gists.html.erb (8.9ms)
+  Rendered gists/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 42ms (Views: 21.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists?page=2&_=1396128223914" for 127.0.0.1 at 2014-03-29 22:23:46 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128223914"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (8.8ms)
+  Rendered gists/index.js.haml (14.8ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 22:24:17 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (14.7ms)
+  Rendered gists/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+  [1m[36mGist Load (3.0ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:26:24 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.9ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (4.9ms)
+  Rendered gists/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 163ms (Views: 130.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?search=sdfsfsdf" for 127.0.0.1 at 2014-03-29 22:26:28 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"sdfsfsdf"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE (description LIKE '%sdfsfsdf%') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (0.1ms)
+  Rendered gists/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?search=" for 127.0.0.1 at 2014-03-29 22:26:34 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>""}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (description LIKE '%%') LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists" WHERE (description LIKE '%%')
+  Rendered shared/_gists.html.erb (13.6ms)
+  Rendered gists/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 40ms (Views: 32.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?search=fd" for 127.0.0.1 at 2014-03-29 22:26:37 +0100
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"fd"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (description LIKE '%fd%') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (1.7ms)
+  Rendered gists/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:27:26 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (3.4ms)
+  Rendered gists/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-29 22:28:25 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (26.9ms)
+  Rendered gists/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-03-29 22:28:55 +0100
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z6JEZMzLoWw9k+HrCFrVEYIZO3rVZKrMo6ADMF2B/TE=", "gist"=>{"snippet"=>"http://localhost:3000/gists/new", "lang"=>"java", "description"=>"gadfgghfghgdghfghfhfdhfhhhhhghfghgsdfdsfsdfdsfdsafdsafdsafagggg"}, "commit"=>"Create Gist"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 29 Mar 2014 21:28:55 UTC +00:00], ["description", "gadfgghfghgdghfghfhfdhfhhhhhghfghgsdfdsfsdfdsfdsafdsafdsafagggg"], ["lang", "java"], ["snippet", "http://localhost:3000/gists/new"], ["updated_at", Sat, 29 Mar 2014 21:28:55 UTC +00:00]]
+  [1m[35m (59.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/37
+Completed 302 Found in 74ms (ActiveRecord: 66.3ms)
+
+
+Started GET "/gists/37" for 127.0.0.1 at 2014-03-29 22:28:55 +0100
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "37"]]
+  Rendered gists/show.html.erb within layouts/application (187.9ms)
+Completed 200 OK in 206ms (Views: 201.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:28:59 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (4.2ms)
+  Rendered gists/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-03-29 22:29:07 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (13.2ms)
+  Rendered gists/index.js.haml (19.8ms)
+Completed 200 OK in 31ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3" for 127.0.0.1 at 2014-03-29 22:29:11 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (6.4ms)
+  Rendered gists/index.js.haml (9.1ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:29:17 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (8.7ms)
+  Rendered gists/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 38ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396128557946" for 127.0.0.1 at 2014-03-29 22:29:18 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128557946"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (6.5ms)
+  Rendered gists/index.js.haml (8.6ms)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:29:20 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (3.8ms)
+  Rendered gists/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 32ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396128560557" for 127.0.0.1 at 2014-03-29 22:29:20 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128560557"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (4.4ms)
+  Rendered gists/index.js.haml (6.7ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3&_=1396128560558" for 127.0.0.1 at 2014-03-29 22:29:21 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396128560558"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (13.4ms)
+  Rendered gists/index.js.haml (27.6ms)
+Completed 200 OK in 39ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=4&_=1396128560559" for 127.0.0.1 at 2014-03-29 22:29:24 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1396128560559"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (1.0ms)
+  Rendered gists/index.js.haml (2.8ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:31:38 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (15.1ms)
+  Rendered gists/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 45ms (Views: 34.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396128698236" for 127.0.0.1 at 2014-03-29 22:31:38 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128698236"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (7.7ms)
+  Rendered gists/index.js.haml (9.7ms)
+Completed 200 OK in 21ms (Views: 12.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:31:41 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (7.7ms)
+  Rendered gists/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 57ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=2&_=1396128701710" for 127.0.0.1 at 2014-03-29 22:31:42 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128701710"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (4.2ms)
+  Rendered gists/index.js.haml (11.8ms)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:31:43 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (3.4ms)
+  Rendered gists/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 41ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=3&_=1396128701711" for 127.0.0.1 at 2014-03-29 22:31:43 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396128701711"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (9.7ms)
+  Rendered gists/index.js.haml (15.4ms)
+Completed 200 OK in 30ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1396128703922" for 127.0.0.1 at 2014-03-29 22:31:44 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128703922"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (8.0ms)
+  Rendered gists/index.js.haml (11.4ms)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists?page=3" for 127.0.0.1 at 2014-03-29 22:31:44 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (17.1ms)
+  Rendered gists/index.js.haml (23.9ms)
+Completed 200 OK in 44ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=4" for 127.0.0.1 at 2014-03-29 22:31:46 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30[0m
+  Rendered shared/_gists.html.erb (1.5ms)
+  Rendered gists/index.js.haml (6.7ms)
+Completed 200 OK in 17ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:32:18 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (7.7ms)
+  Rendered gists/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 39ms (Views: 21.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists?page=2&_=1396128738878" for 127.0.0.1 at 2014-03-29 22:32:19 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396128738878"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (4.2ms)
+  Rendered gists/index.js.haml (6.6ms)
+Completed 200 OK in 19ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists?page=3&_=1396128738879" for 127.0.0.1 at 2014-03-29 22:32:20 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1396128738879"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (6.1ms)
+  Rendered gists/index.js.haml (10.6ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=4" for 127.0.0.1 at 2014-03-29 22:32:21 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (1.4ms)
+  Rendered gists/index.js.haml (2.9ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:38:04 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (2.9ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (9.5ms)
+  Rendered gists/index.html.erb within layouts/application (11.0ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Completed 200 OK in 2141ms (Views: 2128.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/gists?page=2&_=1396129086442" for 127.0.0.1 at 2014-03-29 22:38:06 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396129086442"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (4.4ms)
+  Rendered gists/index.js.haml (7.6ms)
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:39:24 +0100
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (8.3ms)
+  Rendered gists/index.html.erb within layouts/application (15.5ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x8e2ed68>
+
+Completed 200 OK in 2318ms (Views: 2311.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 22:41:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (5.2ms)
+  Rendered gists/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 185ms (Views: 149.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists?page=2&_=1396129311081" for 127.0.0.1 at 2014-03-29 22:42:42 +0100
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1396129311081"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (6.4ms)
+  Rendered gists/index.js.haml (11.2ms)
+Completed 200 OK in 23ms (Views: 15.8ms | ActiveRecord: 0.4ms)
