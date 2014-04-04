@@ -53,5 +53,5 @@ end", lang: "ruby", description: "test"},
 ]
 
 gists.each do |attr|
-	Gist.create(snippet: attr[:snippet], lang: attr[:lang], description: attr[:description])
+	Gist.find_or_create(snippet: attr[:snippet], lang: attr[:lang], description: attr[:description])
 end
