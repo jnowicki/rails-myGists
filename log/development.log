@@ -8179,3 +8179,1605 @@ DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a rel
   Rendered shared/_gists.html.erb (40.7ms)
   Rendered gists/index.html.erb within layouts/application (44.4ms)
 Completed 200 OK in 71ms (Views: 62.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-09 18:44:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.0ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (904.9ms)
+  Rendered gists/index.html.erb within layouts/application (937.4ms)
+Completed 200 OK in 1803ms (Views: 1761.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1399653847899" for 127.0.0.1 at 2014-05-09 18:44:14 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399653847899"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (83.8ms)
+  Rendered gists/index.js.haml (88.0ms)
+Completed 200 OK in 111ms (Views: 97.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:26:37 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (466.8ms)
+  Rendered gists/index.html.erb within layouts/application (486.6ms)
+Completed 200 OK in 894ms (Views: 845.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:28:12 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (34.8ms)
+  Rendered gists/index.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 66ms (Views: 56.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1399804092926" for 127.0.0.1 at 2014-05-11 12:28:20 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399804092926"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (70.1ms)
+  Rendered gists/index.js.haml (75.0ms)
+Completed 200 OK in 103ms (Views: 95.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3&_=1399804092927" for 127.0.0.1 at 2014-05-11 12:28:23 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1399804092927"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (31.8ms)
+  Rendered gists/index.js.haml (34.5ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:28:26 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (40.0ms)
+  Rendered gists/index.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 68ms (Views: 61.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:31:44 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (30.1ms)
+  Rendered gists/index.html.erb within layouts/application (33.4ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Completed 200 OK in 2378ms (Views: 2362.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:32:50 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (38.0ms)
+  Rendered gists/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 67ms (Views: 59.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:33:31 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (2.9ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (35.5ms)
+  Rendered gists/index.html.erb within layouts/application (36.7ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (undefined local variable or method `content' for #<#<Class:0xb6090900>:0xb5af8704>):
+     8: </head>
+     9: <body>
+    10:     <div class ="backtotop">
+    11:       <%= link_to_if content.length > 30000, "Back to topp", :anchor => "top" %>
+    12:     </div>
+    13:     <div class="container">
+    14:       <div class="header">
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__109922429__623415908'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:34:04 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (3.7ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (32.0ms)
+  Rendered gists/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 61ms (Views: 50.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/gists?page=2&_=1399804444931" for 127.0.0.1 at 2014-05-11 12:34:10 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399804444931"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (91.4ms)
+  Rendered gists/index.js.haml (96.0ms)
+Completed 200 OK in 110ms (Views: 101.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3&_=1399804444932" for 127.0.0.1 at 2014-05-11 12:34:13 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1399804444932"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (38.3ms)
+  Rendered gists/index.js.haml (46.5ms)
+Completed 200 OK in 58ms (Views: 49.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists?page=4&_=1399804444933" for 127.0.0.1 at 2014-05-11 12:34:16 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1399804444933"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (5.6ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (15.6ms)
+  Rendered gists/index.js.haml (18.3ms)
+Completed 200 OK in 37ms (Views: 26.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:34:28 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (1.1ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (25.7ms)
+  Rendered gists/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 64ms (Views: 44.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists?page=2&_=1399804468974" for 127.0.0.1 at 2014-05-11 12:35:01 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399804468974"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (66.8ms)
+  Rendered gists/index.js.haml (69.3ms)
+Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=3&_=1399804468975" for 127.0.0.1 at 2014-05-11 12:35:03 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1399804468975"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (61.9ms)
+  Rendered gists/index.js.haml (69.6ms)
+Completed 200 OK in 83ms (Views: 73.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=4&_=1399804468976" for 127.0.0.1 at 2014-05-11 12:35:06 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1399804468976"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30[0m
+  Rendered shared/_gists.html.erb (11.1ms)
+  Rendered gists/index.js.haml (13.5ms)
+Completed 200 OK in 25ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:35:19 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (28.1ms)
+  Rendered gists/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 64ms (Views: 49.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:35:28 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (31.6ms)
+  Rendered gists/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 61ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:35:31 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (30.3ms)
+  Rendered gists/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 61ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=2&_=1399804531310" for 127.0.0.1 at 2014-05-11 12:35:34 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399804531310"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (1.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (2.9ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (59.1ms)
+  Rendered gists/index.js.haml (62.0ms)
+Completed 200 OK in 76ms (Views: 69.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/gists?page=3&_=1399804531311" for 127.0.0.1 at 2014-05-11 12:35:37 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1399804531311"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (48.1ms)
+  Rendered gists/index.js.haml (50.9ms)
+Completed 200 OK in 63ms (Views: 52.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:35:46 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (27.4ms)
+  Rendered gists/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 61ms (Views: 51.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:36:00 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (3.9ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (31.1ms)
+  Rendered gists/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 68ms (Views: 50.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/gists?page=2&_=1399804560414" for 127.0.0.1 at 2014-05-11 12:36:03 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399804560414"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (44.7ms)
+  Rendered gists/index.js.haml (47.8ms)
+Completed 200 OK in 64ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists?page=3&_=1399804560415" for 127.0.0.1 at 2014-05-11 12:36:06 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1399804560415"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (6.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (29.0ms)
+  Rendered gists/index.js.haml (33.9ms)
+Completed 200 OK in 53ms (Views: 36.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/gists?page=4&_=1399804560416" for 127.0.0.1 at 2014-05-11 12:36:09 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4", "_"=>"1399804560416"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (21.7ms)
+  Rendered gists/index.js.haml (28.6ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:38:48 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (40.2ms)
+  Rendered gists/index.html.erb within layouts/application (41.4ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0xa4e6d94>
+
+Completed 200 OK in 2225ms (Views: 2220.7ms | ActiveRecord: 0.4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/icon_top.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-05-11 12:40:32 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (59.1ms)
+  Rendered gists/index.js.haml (62.2ms)
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:40:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (386.7ms)
+  Rendered gists/index.html.erb within layouts/application (390.9ms)
+Completed 200 OK in 569ms (Views: 535.9ms | ActiveRecord: 0.7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/icon_top.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-05-11 12:41:04 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (46.4ms)
+  Rendered gists/index.js.haml (52.5ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3" for 127.0.0.1 at 2014-05-11 12:41:08 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (31.5ms)
+  Rendered gists/index.js.haml (37.4ms)
+Completed 200 OK in 45ms (Views: 40.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:44:45 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (57.4ms)
+  Rendered gists/index.html.erb within layouts/application (59.4ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/icon_top.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:45:44 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (54.8ms)
+  Rendered gists/index.html.erb within layouts/application (55.8ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Completed 200 OK in 2303ms (Views: 2296.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:46:39 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (63.2ms)
+  Rendered gists/index.html.erb within layouts/application (65.9ms)
+Completed 200 OK in 93ms (Views: 87.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:47:31 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (54.2ms)
+  Rendered gists/index.html.erb within layouts/application (55.2ms)
+Completed 200 OK in 81ms (Views: 73.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:47:54 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (64.8ms)
+  Rendered gists/index.html.erb within layouts/application (66.6ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Completed 200 OK in 2485ms (Views: 2477.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 12:48:14 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (72.6ms)
+  Rendered gists/index.html.erb within layouts/application (74.9ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Completed 200 OK in 2468ms (Views: 2464.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/icon_top.png" for 127.0.0.1 at 2014-05-11 12:51:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/icon_top.png"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.3ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:52:59 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (36.5ms)
+  Rendered gists/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 65ms (Views: 60.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:54:27 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (3.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (42.3ms)
+  Rendered gists/index.html.erb within layouts/application (43.6ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Completed 200 OK in 2407ms (Views: 2394.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-05-11 12:54:39 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (49.7ms)
+  Rendered gists/index.js.haml (66.3ms)
+Completed 200 OK in 81ms (Views: 68.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists?page=3" for 127.0.0.1 at 2014-05-11 12:54:42 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (32.9ms)
+  Rendered gists/index.js.haml (36.1ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=4" for 127.0.0.1 at 2014-05-11 12:54:46 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"4"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 30
+  Rendered shared/_gists.html.erb (7.2ms)
+  Rendered gists/index.js.haml (8.9ms)
+Completed 200 OK in 25ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:55:01 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (39.9ms)
+  Rendered gists/index.html.erb within layouts/application (41.4ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x9762970>
+
+Completed 200 OK in 2485ms (Views: 2464.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:55:21 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (3.0ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (39.2ms)
+  Rendered gists/index.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 77ms (Views: 65.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-05-11 12:55:31 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (35.4ms)
+  Rendered gists/index.js.haml (46.2ms)
+Completed 200 OK in 56ms (Views: 48.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:55:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (360.2ms)
+  Rendered gists/index.html.erb within layouts/application (368.1ms)
+Completed 200 OK in 523ms (Views: 487.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:57:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (378.6ms)
+  Rendered gists/index.html.erb within layouts/application (382.6ms)
+Completed 200 OK in 555ms (Views: 521.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-05-11 12:57:10 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (36.9ms)
+  Rendered gists/index.js.haml (41.7ms)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:57:32 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (37.1ms)
+  Rendered gists/index.html.erb within layouts/application (38.5ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x8a03284>
+
+Completed 200 OK in 2368ms (Views: 2359.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:58:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (377.7ms)
+  Rendered gists/index.html.erb within layouts/application (385.9ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0xa3cded0>
+
+Completed 200 OK in 2841ms (Views: 2806.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 12:58:39 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (27.0ms)
+  Rendered gists/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 59ms (Views: 43.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists?page=2&_=1399805920017" for 127.0.0.1 at 2014-05-11 12:58:43 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399805920017"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (31.8ms)
+  Rendered gists/index.js.haml (36.9ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:09:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (375.0ms)
+  Rendered gists/index.html.erb within layouts/application (379.9ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0xa5bac5c>
+
+Completed 200 OK in 3006ms (Views: 2972.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:10:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (366.2ms)
+  Rendered gists/index.html.erb within layouts/application (374.7ms)
+Completed 200 OK in 530ms (Views: 495.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists?page=2&_=1399806648357" for 127.0.0.1 at 2014-05-11 13:10:54 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399806648357"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (36.3ms)
+  Rendered gists/index.js.haml (43.2ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists?page=3&_=1399806648358" for 127.0.0.1 at 2014-05-11 13:11:00 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"3", "_"=>"1399806648358"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (1.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 20
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (32.1ms)
+  Rendered gists/index.js.haml (35.5ms)
+Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 1.6ms)
