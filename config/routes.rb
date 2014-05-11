@@ -1,5 +1,6 @@
 MyGists::Application.routes.draw do
   resources :gists
+  get '/download/:id', to: 'gists#download', as: 'download'
 	
 
 

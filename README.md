@@ -1,11 +1,13 @@
 #Modyfikacje:
 
-* Dodany bootstrap
-* Zmieniony widok
-* Kolorowanie składni
-* Dodany infinite scrolling
-* Dodane wyszukiwanie
-* Reponsywny widok
+* Dodałem możliwość ściągnięcia gista
+* Dodałem guzik back to top
+* Dodałem bootstrap
+* Zmieniłem widoki
+* Zrobiłem kolorowanie składni
+* Dodałem infinite scrolling
+* Dodałem wyszukiwanie
+* Zrobiłem reponsywny widok
 
 #Gemy:
 * pygments.rb '0.5.4'

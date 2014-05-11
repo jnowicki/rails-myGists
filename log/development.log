@@ -9781,3 +9781,2913 @@ DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a rel
   Rendered shared/_gists.html.erb (32.1ms)
   Rendered gists/index.js.haml (35.5ms)
 Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:21:47 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (22.2ms)
+  Rendered gists/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 56ms (Views: 38.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:21:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (359.3ms)
+  Rendered gists/index.html.erb within layouts/application (367.5ms)
+Completed 200 OK in 515ms (Views: 482.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-11 13:22:00 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (61.8ms)
+  Rendered gists/new.html.erb within layouts/application (64.5ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-11 13:22:22 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUpXA9BPqGSZqwrxQ2R9f0eXL3q493vv9MrDGjgwWXg=", "gist"=>{"snippet"=>"public adsjfojas", "lang"=>"java", "description"=>"nazwa"}, "commit"=>"Create Gist"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (33.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 May 2014 11:22:22 UTC +00:00], ["description", "nazwa"], ["lang", "java"], ["snippet", "public adsjfojas"], ["updated_at", Sun, 11 May 2014 11:22:22 UTC +00:00]]
+  [1m[35m (24.5ms)[0m  commit transaction
+Completed 500 Internal Server Error in 67ms
+
+NameError (uninitialized constant GistsController::Word):
+  app/controllers/gists_controller.rb:37:in `block in create'
+  app/controllers/gists_controller.rb:35:in `create'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:22:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (403.1ms)
+  Rendered gists/index.html.erb within layouts/application (407.1ms)
+Completed 200 OK in 572ms (Views: 531.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-11 13:22:55 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (16.4ms)
+  Rendered gists/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-11 13:23:02 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUpXA9BPqGSZqwrxQ2R9f0eXL3q493vv9MrDGjgwWXg=", "gist"=>{"snippet"=>"dasdasda", "lang"=>"java", "description"=>"nazwa"}, "commit"=>"Create Gist"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 May 2014 11:23:02 UTC +00:00], ["description", "nazwa"], ["lang", "java"], ["snippet", "dasdasda"], ["updated_at", Sun, 11 May 2014 11:23:02 UTC +00:00]]
+  [1m[35m (76.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 89ms
+
+NoMethodError (undefined method `language' for #<Gist:0xb5707ac8>):
+  app/models/gist.rb:14:in `generate'
+  app/controllers/gists_controller.rb:37:in `block in create'
+  app/controllers/gists_controller.rb:35:in `create'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:23:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (363.1ms)
+  Rendered gists/index.html.erb within layouts/application (371.6ms)
+Completed 200 OK in 521ms (Views: 487.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-11 13:23:28 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (38.1ms)
+  Rendered gists/new.html.erb within layouts/application (42.4ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-11 13:23:34 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUpXA9BPqGSZqwrxQ2R9f0eXL3q493vv9MrDGjgwWXg=", "gist"=>{"snippet"=>"dasdas", "lang"=>"java", "description"=>"nazwa"}, "commit"=>"Create Gist"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 May 2014 11:23:34 UTC +00:00], ["description", "nazwa"], ["lang", "java"], ["snippet", "dasdas"], ["updated_at", Sun, 11 May 2014 11:23:34 UTC +00:00]]
+  [1m[35m (19.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 32ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - public/temp/nazwa.java):
+  app/models/gist.rb:14:in `initialize'
+  app/models/gist.rb:14:in `open'
+  app/models/gist.rb:14:in `generate'
+  app/controllers/gists_controller.rb:37:in `block in create'
+  app/controllers/gists_controller.rb:35:in `create'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:24:03 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (34.5ms)
+  Rendered gists/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 60ms (Views: 49.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-11 13:24:04 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (4.0ms)
+  Rendered gists/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-11 13:24:12 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUpXA9BPqGSZqwrxQ2R9f0eXL3q493vv9MrDGjgwWXg=", "gist"=>{"snippet"=>"dasdad", "lang"=>"java", "description"=>"nazwa"}, "commit"=>"Create Gist"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 11 May 2014 11:24:12 UTC +00:00], ["description", "nazwa"], ["lang", "java"], ["snippet", "dasdad"], ["updated_at", Sun, 11 May 2014 11:24:12 UTC +00:00]]
+  [1m[36m (43.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists/41
+Completed 302 Found in 48ms (ActiveRecord: 43.6ms)
+
+
+Started GET "/gists/41" for 127.0.0.1 at 2014-05-11 13:24:12 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "41"]]
+  Rendered gists/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:24:34 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (34.7ms)
+  Rendered gists/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 65ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:27:32 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (34.5ms)
+  Rendered gists/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 66ms (Views: 52.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/gists/5" for 127.0.0.1 at 2014-05-11 13:27:35 +0200
+
+ActionController::RoutingError (No route matches [POST] "/gists/5"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.7ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:29:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (368.2ms)
+  Rendered gists/index.html.erb within layouts/application (376.5ms)
+Completed 200 OK in 530ms (Views: 495.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/gists/3" for 127.0.0.1 at 2014-05-11 13:29:39 +0200
+
+ActionController::RoutingError (No route matches [POST] "/gists/3"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (70.1ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:32:19 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (33.9ms)
+  Rendered gists/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 84ms (Views: 50.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:32:58 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (32.8ms)
+  Rendered gists/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 61ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/3/edit" for 127.0.0.1 at 2014-05-11 13:33:01 +0200
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered gists/_form.html.erb (32.8ms)
+  Rendered gists/edit.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 125ms (Views: 120.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/gists/3" for 127.0.0.1 at 2014-05-11 13:33:20 +0200
+Processing by GistsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUpXA9BPqGSZqwrxQ2R9f0eXL3q493vv9MrDGjgwWXg=", "gist"=>{"snippet"=>"public Form1()\r\n{\r\n\tInitializeComponent();\r\n}", "lang"=>"c#", "description"=>"fd"}, "commit"=>"Update Gist", "id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (4.3ms)[0m  [1mUPDATE "gists" SET "snippet" = ?, "updated_at" = ? WHERE "gists"."id" = 3[0m  [["snippet", "public Form1()\r\n{\r\n\tInitializeComponent();\r\n}"], ["updated_at", Sun, 11 May 2014 11:33:20 UTC +00:00]]
+  [1m[35m (89.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/3
+Completed 302 Found in 107ms (ActiveRecord: 94.3ms)
+
+
+Started GET "/gists/3" for 127.0.0.1 at 2014-05-11 13:33:20 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered gists/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:36:40 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (215.7ms)
+  Rendered gists/index.html.erb within layouts/application (223.9ms)
+Completed 500 Internal Server Error in 263ms
+
+ActionView::Template::Error (undefined method `download_gist_path' for #<#<Class:0xb60a04b8>:0xb60b3e64>):
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>  
+    6:       		<%= link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do %><button type="button" class="btn btn-sm btn-danger">Delete</button><% end %>
+    7:       		<a href='<%= download_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Download</button></a></p>
+    8:      </div>
+    9: <% end %>
+  app/views/shared/_gists.html.erb:7:in `block in _app_views_shared__gists_html_erb__542711515__620167268'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__542711515__620167268'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb__330055183__620320218'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/gists/3/download" for 127.0.0.1 at 2014-05-11 13:36:52 +0200
+
+ActionController::RoutingError (No route matches [GET] "/gists/3/download"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:37:17 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (168.9ms)
+  Rendered gists/index.html.erb within layouts/application (170.2ms)
+Completed 200 OK in 324ms (Views: 317.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:37:19 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:37:19 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/gists/download/3" for 127.0.0.1 at 2014-05-11 13:38:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/gists/download/3"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.0ms)
+
+
+Started GET "/gists/3/download" for 127.0.0.1 at 2014-05-11 13:38:55 +0200
+
+ActionController::RoutingError (No route matches [GET] "/gists/3/download"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:42:01 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (378.6ms)
+  Rendered gists/index.html.erb within layouts/application (387.7ms)
+Completed 200 OK in 549ms (Views: 513.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:42:05 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:42:05 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (25.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.8ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-05-11 13:45:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (391.9ms)
+  Rendered gists/index.html.erb within layouts/application (400.0ms)
+Completed 200 OK in 575ms (Views: 541.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:45:18 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.3ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:45:18 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (27.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.7ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:46:37 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (223.0ms)
+  Rendered gists/index.html.erb within layouts/application (231.9ms)
+Completed 500 Internal Server Error in 273ms
+
+ActionView::Template::Error (undefined method `download_gists_path' for #<#<Class:0xb61afad4>:0xb61af4a8>):
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>  
+    6:       		<%= link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do %><button type="button" class="btn btn-sm btn-danger">Delete</button><% end %>
+    7:       		<a href='<%= download_gists_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Download</button></a></p>
+    8:      </div>
+    9: <% end %>
+  app/views/shared/_gists.html.erb:7:in `block in _app_views_shared__gists_html_erb__337363884__619644198'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__337363884__619644198'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb__483432368__619805358'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:46:41 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (20.6ms)
+  Rendered gists/index.html.erb within layouts/application (21.7ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `download_gists_path' for #<#<Class:0xb61afad4>:0xb5c93fa0>):
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>  
+    6:       		<%= link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do %><button type="button" class="btn btn-sm btn-danger">Delete</button><% end %>
+    7:       		<a href='<%= download_gists_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Download</button></a></p>
+    8:      </div>
+    9: <% end %>
+  app/views/shared/_gists.html.erb:7:in `block in _app_views_shared__gists_html_erb__337363884__619644198'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__337363884__619644198'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb__483432368__619805358'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:46:47 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (187.4ms)
+  Rendered gists/index.html.erb within layouts/application (188.4ms)
+Completed 200 OK in 330ms (Views: 308.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:46:50 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/gists/download.3" for 127.0.0.1 at 2014-05-11 13:46:50 +0200
+Processing by GistsController#download as 
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist without an ID):
+  app/controllers/gists_controller.rb:78:in `set_gist'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/gists/3/edit" for 127.0.0.1 at 2014-05-11 13:46:57 +0200
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (1.7ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered gists/_form.html.erb (45.7ms)
+  Rendered gists/edit.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 90ms (Views: 85.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/gists/3/download" for 127.0.0.1 at 2014-05-11 13:47:17 +0200
+
+ActionController::RoutingError (No route matches [GET] "/gists/3/download"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:50:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (217.0ms)
+  Rendered gists/index.html.erb within layouts/application (228.3ms)
+Completed 500 Internal Server Error in 267ms
+
+ActionView::Template::Error (undefined method `download_gists_path' for #<#<Class:0xb619c678>:0xb619c04c>):
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>  
+    6:       		<%= link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do %><button type="button" class="btn btn-sm btn-danger">Delete</button><% end %>
+    7:       		<a href='<%= download_gists_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Download</button></a></p>
+    8:      </div>
+    9: <% end %>
+  app/views/shared/_gists.html.erb:7:in `block in _app_views_shared__gists_html_erb__734512872__619700058'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__734512872__619700058'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb__50461160__619803888'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.9ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:53:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+ERROR: compiling _app_views_shared__gists_html_erb___355323515__620207538 RAISED /home/kuba/my_gists/app/views/shared/_gists.html.erb:7: unknown regexp options - gt
+Function body:           def _app_views_shared__gists_html_erb___355323515__620207538(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "shared/_gists";_old_output_buffer = @output_buffer;gists = gists = local_assigns[:gists];;@output_buffer = output_buffer || ActionView::OutputBuffer.new; gists.each do |gist| 
+@output_buffer.safe_append='	<div class="jumbotron">
+     	<h1 class="naglowek">';@output_buffer.append=( gist.description );@output_buffer.safe_append=' (';@output_buffer.append=( gist.lang );@output_buffer.safe_append=')</h1>
+      	<p class="snip">';@output_buffer.append=( raw Pygments.highlight(gist.snippet, lexer: gist.lang) );@output_buffer.safe_append='</p>
+      	<p><a href=\'';@output_buffer.append=( edit_gist_path(gist) );@output_buffer.safe_append='\'><button type="button" class="btn btn-sm btn-success">Edit</button></a>  
+      		';@output_buffer.append=  link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do @output_buffer.safe_append='<button type="button" class="btn btn-sm btn-danger">Delete</button>'; end ;@output_buffer.safe_append='
+      		<a href=\'';@output_buffer.append=( /download/gist.id );@output_buffer.safe_append='\'><button type="button" class="btn btn-sm btn-success">Download</button></a></p>
+     </div>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `module_eval'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:299:in `compile'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:248:in `block in compile!'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `synchronize'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:236:in `compile!'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:142:in `block in render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:21:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/haml-4.0.5/lib/haml/helpers/action_view_mods.rb:12:in `render_with_haml'
+/home/kuba/my_gists/app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb___654265885__620327738'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:143:in `block in render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:161:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/template.rb:141:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:97:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/mime_responds.rb:191:in `respond_to'
+/home/kuba/my_gists/app/controllers/gists_controller.rb:9:in `index'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:189:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:413:in `_run__250491458__process_action__callbacks'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/notifications.rb:159:in `instrument'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/base.rb:136:in `process'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/abstract_controller/rendering.rb:44:in `process'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:195:in `dispatch'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_controller/metal.rb:231:in `block in action'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/query_cache.rb:36:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.3/lib/active_record/migration.rb:369:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:373:in `_run__252644859__call__callbacks'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:38:in `call_app'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `block in call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/rack/logger.rb:20:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.3/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/engine.rb:511:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/railties-4.0.3/lib/rails/application.rb:97:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/kuba/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered shared/_gists.html.erb (99.4ms)
+  Rendered gists/index.html.erb within layouts/application (108.9ms)
+Completed 500 Internal Server Error in 156ms
+
+ActionView::Template::Error (/home/kuba/my_gists/app/views/shared/_gists.html.erb:7: unknown regexp options - gt):
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>  
+    6:       		<%= link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do %><button type="button" class="btn btn-sm btn-danger">Delete</button><% end %>
+    7:       		<a href='<%= /download/gist.id %>'><button type="button" class="btn btn-sm btn-success">Download</button></a></p>
+    8:      </div>
+    9: <% end %>
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb___654265885__620327738'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:55:28 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (366.6ms)
+  Rendered gists/index.html.erb within layouts/application (367.8ms)
+Completed 200 OK in 488ms (Views: 479.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 13:55:31 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered gists/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 13:55:47 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered gists/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:56:45 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (37.2ms)
+  Rendered gists/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 66ms (Views: 54.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 13:58:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (425.0ms)
+  Rendered gists/index.html.erb within layouts/application (428.9ms)
+Completed 200 OK in 602ms (Views: 554.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 13:58:17 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered gists/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 13:58:50 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (432.4ms)
+  Rendered gists/index.html.erb within layouts/application (438.5ms)
+Completed 200 OK in 602ms (Views: 561.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 13:58:55 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "5"]]
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template gists/download, application/download with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee, :haml]}. Searched in:
+  * "/home/kuba/my_gists/app/views"
+):
+  actionpack (4.0.3) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.3) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.3) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.3) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.3) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.3) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:413:in `_run__972569632__process_action__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__686973480__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 13:58:55 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate (Missing template gists/download, application/download with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee, :haml]}. Searched in:
+  * "/home/kuba/my_gists/app/views"
+):
+  actionpack (4.0.3) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.3) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.3) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.3) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.3) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.3) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:413:in `_run__972569632__process_action__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__686973480__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 13:59:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (416.0ms)
+  Rendered gists/index.html.erb within layouts/application (420.6ms)
+Completed 200 OK in 614ms (Views: 563.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:00:01 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:00:01 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (34.9ms)
+  Rendered gists/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:01:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (435.3ms)
+  Rendered gists/index.html.erb within layouts/application (442.2ms)
+Completed 200 OK in 602ms (Views: 570.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:01:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/fd.c#
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fd.c" for 127.0.0.1 at 2014-05-11 14:01:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:01:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.0ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/fd.c#
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/fd.c" for 127.0.0.1 at 2014-05-11 14:01:38 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (23.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.8ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:01:46 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/fd.c#
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/fd.c" for 127.0.0.1 at 2014-05-11 14:01:46 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.9ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:01:48 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/fd.c#
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fd.c" for 127.0.0.1 at 2014-05-11 14:01:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.6ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:01:50 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/fd.c#
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fd.c" for 127.0.0.1 at 2014-05-11 14:01:50 +0200
+
+ActionController::RoutingError (No route matches [GET] "/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:01:53 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (2.5ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (26.0ms)
+  Rendered gists/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 46ms (Views: 39.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/download/10" for 127.0.0.1 at 2014-05-11 14:01:57 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "10"]]
+Redirected to http://localhost:3000/test.java
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/test.java" for 127.0.0.1 at 2014-05-11 14:01:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/test.java"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.7ms)
+
+
+Started GET "/download/10" for 127.0.0.1 at 2014-05-11 14:01:57 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "10"]]
+Redirected to http://localhost:3000/test.java
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/test.java" for 127.0.0.1 at 2014-05-11 14:01:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/test.java"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:02:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (409.0ms)
+  Rendered gists/index.html.erb within layouts/application (416.2ms)
+Completed 200 OK in 585ms (Views: 538.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:02:28 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:02:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:02:28 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:02:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (24.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:03:05 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:03:05 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:03:06 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:03:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:03:09 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (42.7ms)
+  Rendered gists/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 70ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 14:03:11 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "5"]]
+Redirected to http://localhost:3000/temp/cxxc.c
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 14:03:11 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Redirected to http://localhost:3000/temp/cxxc.c
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:05:48 +0200
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/kuba/my_gists/app/models/gist.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 14:05:54 +0200
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/home/kuba/my_gists/app/models/gist.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 14:06:11 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 25ms
+
+SyntaxError (/home/kuba/my_gists/app/models/gist.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 14:06:12 +0200
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/kuba/my_gists/app/models/gist.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 14:06:31 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (359.8ms)
+  Rendered gists/index.html.erb within layouts/application (363.7ms)
+Completed 200 OK in 492ms (Views: 476.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-11 14:06:52 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (30.8ms)
+  Rendered gists/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 56ms (Views: 45.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:06:54 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:06:54 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.9ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:06:55 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:06:55 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:07:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (432.6ms)
+  Rendered gists/index.html.erb within layouts/application (437.4ms)
+Completed 200 OK in 624ms (Views: 575.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:07:08 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:07:08 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:07:08 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.0ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.c#
+Completed 302 Found in 120ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/temp/fd.c" for 127.0.0.1 at 2014-05-11 14:07:08 +0200
+
+ActionController::RoutingError (No route matches [GET] "/temp/fd.c"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kuba/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (24.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:09:24 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (26.8ms)
+  Rendered gists/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 55ms (Views: 42.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:25 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:25 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:30 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:34 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:35 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:35 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:35 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:35 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:36 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:36 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:36 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:36 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:36 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:37 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:38 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:38 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:38 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:38 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:38 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:39 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:39 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:39 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:39 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:39 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:39 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:40 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:09:40 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:12 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:12 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:10:14 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (62.9ms)
+  Rendered gists/index.html.erb within layouts/application (67.1ms)
+Completed 200 OK in 95ms (Views: 87.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 14:10:17 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Redirected to http://localhost:3000/temp/cxxc.c
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 14:10:17 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "5"]]
+Redirected to http://localhost:3000/temp/cxxc.c
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:27 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:27 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:29 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:30 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:30 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:30 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:31 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:31 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:31 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:31 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:31 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:31 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:33 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:33 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:33 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:33 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:33 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:10:34 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+Redirected to http://localhost:3000/temp/fd.cs
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:10:37 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (40.9ms)
+  Rendered gists/index.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 65ms (Views: 56.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/download/9" for 127.0.0.1 at 2014-05-11 14:10:44 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Redirected to http://localhost:3000/temp/test.ruby
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/9" for 127.0.0.1 at 2014-05-11 14:10:44 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "9"]]
+Redirected to http://localhost:3000/temp/test.ruby
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/9" for 127.0.0.1 at 2014-05-11 14:10:47 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Redirected to http://localhost:3000/temp/test.ruby
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/9" for 127.0.0.1 at 2014-05-11 14:10:47 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "9"]]
+Redirected to http://localhost:3000/temp/test.ruby
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/9" for 127.0.0.1 at 2014-05-11 14:10:47 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Redirected to http://localhost:3000/temp/test.ruby
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/9" for 127.0.0.1 at 2014-05-11 14:10:47 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "9"]]
+Redirected to http://localhost:3000/temp/test.ruby
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:10:53 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (54.5ms)
+  Rendered gists/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 79ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:15:54 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (23.0ms)
+  Rendered gists/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 58ms (Views: 43.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:15:57 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:15:57 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:15:59 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (4.6ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 7ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:16:01 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+Redirected to http://localhost:3000/temp/x.js
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:21:01 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (35.4ms)
+  Rendered gists/index.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 68ms (Views: 51.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:21:02 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (9.8ms)
+Redirected to 
+Completed 500 Internal Server Error in 15ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/gists_controller.rb:65:in `download'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:21:02 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (0.5ms)
+Redirected to 
+Completed 500 Internal Server Error in 2ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/gists_controller.rb:65:in `download'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:21:19 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (27.0ms)
+  Rendered gists/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 54ms (Views: 41.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:21:21 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (1.5ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:21:21 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (1.3ms)
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:21:29 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered text template (0.0ms)
+Sent data x.js (0.6ms)
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:21:29 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered text template (0.0ms)
+Sent data x.js (3.8ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/download/7" for 127.0.0.1 at 2014-05-11 14:21:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered text template (0.0ms)
+Sent data test2.rb (0.5ms)
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/download/7" for 127.0.0.1 at 2014-05-11 14:21:32 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered text template (0.0ms)
+Sent data test2.rb (1.1ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:22:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (445.6ms)
+  Rendered gists/index.html.erb within layouts/application (451.7ms)
+Completed 200 OK in 629ms (Views: 583.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:22:08 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (4.4ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:22:08 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (0.5ms)
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:22:11 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered text template (0.0ms)
+Sent data x.js (3.3ms)
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/download/6" for 127.0.0.1 at 2014-05-11 14:22:11 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered text template (0.0ms)
+Sent data x.js (2.7ms)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-11 14:26:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (425.5ms)
+  Rendered gists/index.html.erb within layouts/application (434.4ms)
+Completed 200 OK in 616ms (Views: 582.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:27:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered text template (0.1ms)
+Sent data fd.cs (2.4ms)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/download/3" for 127.0.0.1 at 2014-05-11 14:27:00 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered text template (0.0ms)
+Sent data fd.cs (2.2ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 14:27:03 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered text template (0.0ms)
+Sent data cxxc.c (2.5ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/download/5" for 127.0.0.1 at 2014-05-11 14:27:03 +0200
+Processing by GistsController#download as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered text template (0.0ms)
+Sent data cxxc.c (3.3ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists?page=2&_=1399811215445" for 127.0.0.1 at 2014-05-11 14:27:06 +0200
+Processing by GistsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1399811215445"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 10
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (82.5ms)
+  Rendered gists/index.js.haml (94.9ms)
+Completed 200 OK in 108ms (Views: 100.3ms | ActiveRecord: 0.4ms)

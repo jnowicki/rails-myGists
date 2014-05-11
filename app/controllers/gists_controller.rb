@@ -1,5 +1,5 @@
 class GistsController < ApplicationController
-  before_action :set_gist, only: [:show, :edit, :update, :destroy]
+  before_action :set_gist, only: [:download, :show, :edit, :update, :destroy]
 
   # GET /gists
   # GET /gists.json
@@ -16,6 +16,7 @@ class GistsController < ApplicationController
   # GET /gists/1
   # GET /gists/1.json
   def show
+    Gist.generate(@gist)
   end
 
   # GET /gists/new
@@ -42,6 +43,25 @@ class GistsController < ApplicationController
       end
     end
   end
+
+  def download
+    case @gist.lang.downcase
+    when 'c#'
+      ext = 'cs'
+    when 'ruby'
+      ext = 'rb'
+    when 'c++'
+      ext = 'cpp'
+    when 'javascript'
+      ext = 'js'
+    when 'objective c'
+      ext = 'm'
+    else
+      ext = @gist.lang
+    end
+    send_data(@gist.snippet, :filename => @gist.description + "." + ext)
+  end
+
 
   # PATCH/PUT /gists/1
   # PATCH/PUT /gists/1.json
