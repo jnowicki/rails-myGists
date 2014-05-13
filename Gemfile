@@ -19,6 +19,7 @@ gem 'bootstrap-sass', '3.1.1.0'
 gem 'will_paginate', '~> 3.0.5'
 gem 'simple_form', '~> 3.0.1'
 gem 'haml-rails'
+gem "bcrypt", :require => "bcrypt"
 
 group :development, :test do
   gem 'rspec-rails'
