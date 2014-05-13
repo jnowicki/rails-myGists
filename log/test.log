@@ -1,0 +1,480 @@
+  [1m[36m (36.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (7.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGists (20140309125812)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "gists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "snippet" text, "lang" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140309125812"]]
+  [1m[36m (26.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36m (1.9ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (33.6ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GistsController#new as HTML
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}, "id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}, "id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}, "id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gists/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}, "id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}, "id"=>"1"}
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gists/1
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}}
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:14 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:14 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:15 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:15 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:15 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" ORDER BY "gists"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:15 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 21:28:15 +0200
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (0.8ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/custom.css.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 437baf26ce7a1e65834c1de16aa90b23017a9141/bootstrap.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_variables.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_mixins.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_normalize.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_print.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_scaffolding.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_type.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_code.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_grid.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tables.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_forms.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_buttons.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_component-animations.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_glyphicons.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_dropdowns.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_button-groups.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_input-groups.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navs.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_navbar.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_breadcrumbs.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pagination.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_pager.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_labels.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_badges.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_jumbotron.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_thumbnails.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_alerts.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_progress-bars.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_media.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_list-group.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_panels.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_wells.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_close.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_modals.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_tooltip.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_popovers.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_carousel.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_utilities.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Warning. Error encountered while saving cache 732eb1922e228923e64b036a322ed5222c54eaee/_responsive-utilities.scssc: can't dump anonymous class #<Class:0xabbb3e0>
+
+Completed 200 OK in 4268ms (Views: 4245.6ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (71.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered shared/_gists.html.erb (39.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (2.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 21:28:44 +0200
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (0.7ms)
+  Rendered gists/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 70ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered shared/_gists.html.erb (108.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "gists"
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" ORDER BY "gists"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}}
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}}
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}, "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}, "id"=>"1"}
+  [1m[36mGist Load (0.0ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"MyText"}, "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}, "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"invalid value"}, "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by GistsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "snippet", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 19:28:45 UTC +00:00], ["snippet", "MyText"], ["updated_at", Tue, 13 May 2014 19:28:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (14.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (3.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
