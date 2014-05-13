@@ -28,15 +28,8 @@
 <body>
   
 
-<div id="user_nav">
-  <% if current_user %>
-    Logged in as <%= current_user.email %>.
-    <%= link_to "Log out", log_out_path %>
-  <% else %>
-    <%= link_to "Sign up", sign_up_path %> or
-    <%= link_to "log in", log_in_path %>
-  <% end %>
-</div>
+
+
 
 <% flash.each do |name, msg| %>
   <%= content_tag :div, msg, :id => "flash_#{name}" %>
@@ -46,6 +39,13 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
+            <% if current_user %>
+    <li><a><%= current_user.email %></a></li>
+    <li><%= link_to "Log out", log_out_path %></li>
+  <% else %>
+    <li><%= link_to "Sign up", sign_up_path %></li>
+    <li><%= link_to "log in", log_in_path %></li>
+        <% end %>
           <li class="active"><a href="/">Home</a></li>
           <li><a href="/gists/new">New Gist</a></li>
           <li>

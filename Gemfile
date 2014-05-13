@@ -20,6 +20,7 @@ gem 'will_paginate', '~> 3.0.5'
 gem 'simple_form', '~> 3.0.1'
 gem 'haml-rails'
 gem "bcrypt", :require => "bcrypt"
+gem "validates_email_format_of"
 
 group :development, :test do
   gem 'rspec-rails'

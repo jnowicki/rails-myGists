@@ -4,8 +4,11 @@ class GistsController < ApplicationController
   # GET /gists
   # GET /gists.json
   def index
-    @gists = Gist.paginate(:page => params[:page]).search(params[:search])
-
+    if current_user
+    @gists = Gist.paginate(:page => params[:page]).search(params[:search], current_user.id)
+  else
+    @gists = Gist.paginate(:page => params[:page]).search(params[:search], 0)
+  end
     respond_to do |format|
       format.html
       format.json { render json: @gists}
@@ -16,12 +19,12 @@ class GistsController < ApplicationController
   # GET /gists/1
   # GET /gists/1.json
   def show
-    Gist.generate(@gist)
   end
 
   # GET /gists/new
   def new
     @gist = Gist.new
+    @status = ['public', 'private']
   end
 
   # GET /gists/1/edit
@@ -32,7 +35,7 @@ class GistsController < ApplicationController
   # POST /gists.json
   def create
     @gist = Gist.new(gist_params)
-
+    @gist.user_id = current_user.id
     respond_to do |format|
       if @gist.save
         format.html { redirect_to @gist, notice: 'Gist was successfully created.' }
@@ -95,6 +98,6 @@ class GistsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gist_params
-      params.require(:gist).permit(:snippet, :lang, :description)
+      params.require(:gist).permit(:snippet, :lang, :description, :status)
     end
 end

@@ -13091,3 +13091,2020 @@ DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a rel
   Rendered gists/index.html.erb within layouts/application (27.0ms)
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-05-13 22:04:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:04:53 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (374.0ms)
+  Rendered gists/index.html.erb within layouts/application (378.5ms)
+Completed 200 OK in 523ms (Views: 512.3ms | ActiveRecord: 0.8ms)
+  [1m[36mUser Load (3.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:05:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (388.0ms)
+  Rendered gists/index.html.erb within layouts/application (398.0ms)
+Completed 200 OK in 571ms (Views: 525.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-05-13 22:05:34 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:05:37 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"jnowicki@wp.pl", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'jnowicki@wp.pl' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:05:38 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (45.0ms)
+  Rendered gists/index.html.erb within layouts/application (46.3ms)
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 68ms (Views: 62.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-05-13 22:05:41 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:05:41 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (24.9ms)
+  Rendered gists/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-05-13 22:05:42 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:05:46 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (33.0ms)
+  Rendered gists/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 66ms (Views: 56.4ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAddRoleToUsers (20140513200852)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "add_role_to_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140513200852"]]
+  [1m[36m (22.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:09:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (387.2ms)
+  Rendered gists/index.html.erb within layouts/application (391.2ms)
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/add_role_to_users.css.scssc: can't dump anonymous class #<Class:0x984dd94>
+
+Warning. Error encountered while saving cache 88c4f802c643cb02f48801d7a89e56b93c215c68/scaffolds.css.scssc: can't dump anonymous class #<Class:0x984dd94>
+
+Completed 200 OK in 775ms (Views: 733.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2014-05-13 22:09:09 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 62ms (Views: 49.3ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-13 22:09:20 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "user"=>{"email"=>"jnowicki@wp.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'jnowicki@wp.pl' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 45ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-13 22:09:24 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "user"=>{"email"=>"jnowicki@wp.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'jnowicki@wp.pl' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 36ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-05-13 22:09:29 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:09:32 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"jnowicki@wp.pl", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'jnowicki@wp.pl' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 109ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:09:32 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (30.0ms)
+  Rendered gists/index.html.erb within layouts/application (34.9ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 71ms (Views: 65.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-05-13 22:09:40 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:09:40 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (21.2ms)
+  Rendered gists/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 49ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (3.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRoleToUsers (20140513201036)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "role" varchar(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140513201036"]]
+  [1m[36m (23.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:11:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (389.2ms)
+  Rendered gists/index.html.erb within layouts/application (393.2ms)
+Completed 200 OK in 615ms (Views: 581.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-05-13 22:11:53 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:11:56 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"jnowicki@wp.pl", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'jnowicki@wp.pl' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:11:57 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (32.6ms)
+  Rendered gists/index.html.erb within layouts/application (35.6ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 62ms (Views: 54.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-05-13 22:12:07 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:12:07 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (36.0ms)
+  Rendered gists/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-05-13 22:12:17 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2014-05-13 22:12:24 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:19:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (402.7ms)
+  Rendered gists/index.html.erb within layouts/application (406.4ms)
+Completed 200 OK in 598ms (Views: 565.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:36 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (25.6ms)
+  Rendered gists/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 78ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:38 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (60.9ms)
+  Rendered gists/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 83ms (Views: 78.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:42 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (29.9ms)
+  Rendered gists/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 67ms (Views: 58.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:43 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (41.7ms)
+  Rendered gists/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:43 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (35.7ms)
+  Rendered gists/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 79ms (Views: 66.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (356.9ms)
+  Rendered gists/index.html.erb within layouts/application (360.9ms)
+Completed 200 OK in 533ms (Views: 497.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:20:55 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (28.2ms)
+  Rendered gists/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:21:10 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (35.4ms)
+  Rendered gists/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 66ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:21:11 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (32.9ms)
+  Rendered gists/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 60ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:21:12 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (38.4ms)
+  Rendered gists/index.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 65ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:21:13 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (35.8ms)
+  Rendered gists/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 61ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:22:00 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (40.5ms)
+  Rendered gists/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 71ms (Views: 58.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:22:53 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (30.0ms)
+  Rendered gists/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 56ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:23:12 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (35.0ms)
+  Rendered gists/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 58ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:23:22 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (29.2ms)
+  Rendered gists/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 72ms (Views: 53.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:23:58 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (36.2ms)
+  Rendered gists/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 71ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:25:25 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (31.6ms)
+  Rendered gists/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 68ms (Views: 52.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:26:07 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (39.7ms)
+  Rendered gists/index.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 65ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2014-05-13 22:26:20 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 65ms (Views: 50.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-05-13 22:26:21 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:26:23 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"kuba", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'kuba' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:26:30 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"kubavic@interia.pl", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'kubavic@interia.pl' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:26:35 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"kubavic@interia.pl", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'kubavic@interia.pl' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-05-13 22:26:42 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "email"=>"jnowicki@wp.pl", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'jnowicki@wp.pl' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:26:42 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (24.9ms)
+  Rendered gists/index.html.erb within layouts/application (25.9ms)
+  [1m[35mUser Load (4.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 38.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:27:18 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (51.9ms)
+  Rendered gists/index.html.erb within layouts/application (52.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 72ms (Views: 66.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:27:54 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (32.7ms)
+  Rendered gists/index.html.erb within layouts/application (33.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 62ms (Views: 51.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:28:22 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (38.2ms)
+  Rendered gists/index.html.erb within layouts/application (43.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 74ms (Views: 60.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:28:34 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (28.4ms)
+  Rendered gists/index.html.erb within layouts/application (30.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:28:37 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (4.2ms)
+  Rendered gists/new.html.erb within layouts/application (21.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserToGists (20140513203158)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "gists" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "gists" ADD "status" varchar(255)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140513203158"]]
+  [1m[35m (37.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mGist Load (3.5ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:34:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered shared/_gists.html.erb (381.2ms)
+  Rendered gists/index.html.erb within layouts/application (386.5ms)
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 589ms (Views: 545.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:34:42 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (41.8ms)
+  Rendered gists/new.html.erb within layouts/application (43.1ms)
+  [1m[36mUser Load (4.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 81ms (Views: 75.2ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 22:34:52 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"dasdsa", "lang"=>"java", "description"=>"test2"}, "commit"=>"Create Gist"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 13 May 2014 20:34:52 UTC +00:00], ["description", "test2"], ["lang", "java"], ["snippet", "dasdsa"], ["updated_at", Tue, 13 May 2014 20:34:52 UTC +00:00], ["user_id", 1]]
+  [1m[36m (51.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists/42
+Completed 302 Found in 68ms (ActiveRecord: 53.4ms)
+
+
+Started GET "/gists/42" for 127.0.0.1 at 2014-05-13 22:34:52 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "42"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `generate' for #<Class:0xb64c8acc>):
+  app/controllers/gists_controller.rb:19:in `show'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:35:43 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (28.2ms)
+  Rendered gists/index.html.erb within layouts/application (29.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 75ms (Views: 58.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:35:44 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (8.9ms)
+  Rendered gists/new.html.erb within layouts/application (16.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 22:35:51 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"dasdsada", "lang"=>"java", "description"=>"dasdsad23123"}, "commit"=>"Create Gist"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 20:35:51 UTC +00:00], ["description", "dasdsad23123"], ["lang", "java"], ["snippet", "dasdsada"], ["updated_at", Tue, 13 May 2014 20:35:51 UTC +00:00], ["user_id", 1]]
+  [1m[35m (16.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/43
+Completed 302 Found in 30ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/gists/43" for 127.0.0.1 at 2014-05-13 22:35:51 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "43"]]
+  Rendered gists/show.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+  [1m[36mGist Load (4.0ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+
+
+Started GET "/gists/43" for 127.0.0.1 at 2014-05-13 22:42:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "43"]]
+  Rendered gists/show.html.erb within layouts/application (96.7ms)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 326ms (Views: 260.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:42:11 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR ststus = 'public')[0m
+SQLite3::SQLException: no such column: ststus: SELECT "gists".* FROM "gists"  WHERE (user_id = 1 OR ststus = 'public')
+Completed 500 Internal Server Error in 42ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ststus: SELECT "gists".* FROM "gists"  WHERE (user_id = 1 OR ststus = 'public')):
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:42:11 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (3.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[36mGist Load (2.6ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR ststus = 'public')[0m
+SQLite3::SQLException: no such column: ststus: SELECT "gists".* FROM "gists"  WHERE (user_id = 1 OR ststus = 'public')
+Completed 500 Internal Server Error in 10ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ststus: SELECT "gists".* FROM "gists"  WHERE (user_id = 1 OR ststus = 'public')):
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:42:26 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public')[0m
+  Rendered shared/_gists.html.erb (2.6ms)
+  Rendered gists/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% gists.each do |gist| %>
+    2: 	<div class="jumbotron">
+    3:      	<h1 class="naglowek"><%= gist.description %> (<%= gist.lang %>)</h1>
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__848345882__622028828'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb__755980928__621963248'
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:42:51 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public')[0m
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError (undefined method `paginate' for #<Array:0xa60da10>):
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:43:05 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public')[0m
+Completed 500 Internal Server Error in 48ms
+
+NoMethodError (undefined method `respond_to' for #<Array:0xb577b8ec>):
+  app/controllers/gists_controller.rb:9:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:43:17 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public')[0m
+Completed 500 Internal Server Error in 24ms
+
+NoMethodError (undefined method `paginate' for #<Array:0xb5bb9620>):
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:43:59 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 43ms
+
+ArgumentError (wrong number of arguments (2 for 0..1)):
+  app/controllers/gists_controller.rb:8:in `find'
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:44:14 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (21.6ms)
+  Rendered gists/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 91ms (Views: 48.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:44:47 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/kuba/my_gists/app/controllers/gists_controller.rb:8)
+  [1m[35mGist Load (1.5ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+Completed 500 Internal Server Error in 24ms
+
+NoMethodError (undefined method `search' for #<WillPaginate::Collection:0xb5d19f38>):
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:45:43 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "gists"
+  Rendered shared/_gists.html.erb (280.1ms)
+  Rendered gists/index.html.erb within layouts/application (282.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 341ms (Views: 324.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:46:30 +0200
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `current_user' for #<Class:0xb5b19120>):
+  app/models/gist.rb:9:in `search'
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:47:05 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (8.7ms)
+  Rendered gists/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 45ms (Views: 24.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-05-13 22:47:14 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::PreparedStatementInvalid (wrong number of bind variables (1 for 3) in: (user_id = ? OR status = ?) AND description LIKE ?):
+  app/models/gist.rb:7:in `search'
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/?search=test" for 127.0.0.1 at 2014-05-13 22:47:45 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"test"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE ((user_id = 1 OR status = 'public') AND description LIKE '%test%') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (3.1ms)
+  Rendered gists/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 41ms (Views: 21.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 22:47:54 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (7.0ms)
+  Rendered gists/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=da" for 127.0.0.1 at 2014-05-13 22:48:00 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"da"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE ((user_id = 1 OR status = 'public') AND description LIKE '%da%') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (5.9ms)
+  Rendered gists/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 46ms (Views: 36.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?search=da" for 127.0.0.1 at 2014-05-13 22:50:02 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"search"=>"da"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:7)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE ((user_id = 1 OR status = 'public') AND description LIKE '%da%') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (4.2ms)
+  Rendered gists/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 56ms (Views: 27.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:50:03 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (24.0ms)
+  Rendered gists/new.html.erb within layouts/application (26.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:50:13 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (10.2ms)
+  Rendered gists/new.html.erb within layouts/application (11.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:50:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (29.4ms)
+  Rendered gists/new.html.erb within layouts/application (32.9ms)
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 202ms (Views: 173.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:53:27 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (8.7ms)
+  Rendered gists/new.html.erb within layouts/application (14.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:55:30 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (15.4ms)
+  Rendered gists/new.html.erb within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, @status %>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212__622696698'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__622696698'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.7ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:55:52 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (64.4ms)
+  Rendered gists/new.html.erb within layouts/application (65.0ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error ({} is not a symbol):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, @status, {}, {}%>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212__620060058'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__620060058'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:15 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (12.0ms)
+  Rendered gists/new.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, 1..5%>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.3ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:16 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (2.1ms)
+  Rendered gists/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, 1..5%>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:16 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (2.2ms)
+  Rendered gists/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, 1..5%>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.3ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:17 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (12.4ms)
+  Rendered gists/new.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, 1..5%>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.3ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:17 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (8.5ms)
+  Rendered gists/new.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.collection_select :status, 1..5%>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_94335710'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.1ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:33 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (17.0ms)
+  Rendered gists/new.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `make_num' for #<Gist:0xb5c7fbe0>):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.select "make_num", 1..50 %>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212__622597998'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__622597998'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.6ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:56:47 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (5.9ms)
+  Rendered gists/new.html.erb within layouts/application (10.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:57:03 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (11.4ms)
+  Rendered gists/new.html.erb within layouts/application (20.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 22:57:14 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"asdadda", "lang"=>"ruby", "description"=>"sadsa", "status"=>"private"}, "commit"=>"Create Gist"}
+Unpermitted parameters: status
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 13 May 2014 20:57:14 UTC +00:00], ["description", "sadsa"], ["lang", "ruby"], ["snippet", "asdadda"], ["updated_at", Tue, 13 May 2014 20:57:14 UTC +00:00], ["user_id", 1]]
+  [1m[36m (42.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists/44
+Completed 302 Found in 53ms (ActiveRecord: 44.5ms)
+
+
+Started GET "/gists/44" for 127.0.0.1 at 2014-05-13 22:57:14 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "44"]]
+  Rendered gists/show.html.erb within layouts/application (130.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 153ms (Views: 149.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 22:57:19 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (31.6ms)
+  Rendered gists/index.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 75ms (Views: 67.7ms | ActiveRecord: 0.4ms)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists"
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 22:58:59 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (13.4ms)
+  Rendered gists/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 39ms (Views: 28.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/gists/44" for 127.0.0.1 at 2014-05-13 22:59:03 +0200
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "id"=>"44"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "44"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 44]]
+  [1m[36m (95.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 104ms (ActiveRecord: 96.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 22:59:03 +0200
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (8.6ms)
+  Rendered gists/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 36ms (Views: 23.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:59:06 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (5.9ms)
+  Rendered gists/new.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `merge' for :status:Symbol):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.select :status, @status, :status %>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212__619833488'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__619833488'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__619810358'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.2ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:59:06 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (12.2ms)
+  Rendered gists/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `merge' for :status:Symbol):
+    24:     <%= f.text_field :description %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.select :status, @status, :status %>
+    28:   </div>
+    29:   <div class="actions">
+    30:     <%= f.submit %>
+  app/views/gists/_form.html.erb:27:in `block in _app_views_gists__form_html_erb___934067212__619111168'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__619111168'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 22:59:32 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (13.8ms)
+  Rendered gists/new.html.erb within layouts/application (18.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 22:59:40 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"asd", "lang"=>"ruby", "description"=>"asd", "status"=>"private"}, "commit"=>"Create Gist"}
+Unpermitted parameters: status
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 20:59:40 UTC +00:00], ["description", "asd"], ["lang", "ruby"], ["snippet", "asd"], ["updated_at", Tue, 13 May 2014 20:59:40 UTC +00:00], ["user_id", 1]]
+  [1m[35m (86.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/45
+Completed 302 Found in 95ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/gists/45" for 127.0.0.1 at 2014-05-13 22:59:40 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "45"]]
+  Rendered gists/show.html.erb within layouts/application (5.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:00:01 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (8.8ms)
+  Rendered gists/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 42ms (Views: 33.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/gists/45" for 127.0.0.1 at 2014-05-13 23:00:04 +0200
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "id"=>"45"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "45"]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 45]]
+  [1m[35m (46.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 55ms (ActiveRecord: 47.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:00:04 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (3.9ms)
+  Rendered gists/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/gists/43" for 127.0.0.1 at 2014-05-13 23:00:07 +0200
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "id"=>"43"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "43"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 43]]
+  [1m[35m (40.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 48ms (ActiveRecord: 41.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:00:07 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (4.3ms)
+  Rendered gists/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:01:11 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (8.1ms)
+  Rendered gists/new.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 2..4)):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :status %><br>
+    28:     <%= f.select.collection :status, @status %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gists/_form.html.erb:28:in `block in _app_views_gists__form_html_erb___934067212__621587388'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__621587388'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__619810358'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.6ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:01:11 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (13.5ms)
+  Rendered gists/new.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 2..4)):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :status %><br>
+    28:     <%= f.select.collection :status, @status %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gists/_form.html.erb:28:in `block in _app_views_gists__form_html_erb___934067212__620676128'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212__620676128'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:02:32 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (13.9ms)
+  Rendered gists/new.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :status %><br>
+    28:     <%= f.collection_select :status, @status %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gists/_form.html.erb:28:in `block in _app_views_gists__form_html_erb___934067212_93401100'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_93401100'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:02:33 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (10.6ms)
+  Rendered gists/new.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 4..6)):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :status %><br>
+    28:     <%= f.collection_select :status, @status %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gists/_form.html.erb:28:in `block in _app_views_gists__form_html_erb___934067212_93401100'
+  app/views/gists/_form.html.erb:1:in `_app_views_gists__form_html_erb___934067212_93401100'
+  app/views/gists/new.html.erb:3:in `_app_views_gists_new_html_erb___883167052__620721128'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.3ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:03:04 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (18.8ms)
+  Rendered gists/new.html.erb within layouts/application (22.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:03:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (25.6ms)
+  Rendered gists/new.html.erb within layouts/application (31.1ms)
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 220ms (Views: 190.5ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 23:03:34 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"wfwsdf", "lang"=>"ruby", "description"=>"adfadgd", "status"=>"public"}, "commit"=>"Create Gist"}
+Unpermitted parameters: status
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 21:03:34 UTC +00:00], ["description", "adfadgd"], ["lang", "ruby"], ["snippet", "wfwsdf"], ["updated_at", Tue, 13 May 2014 21:03:34 UTC +00:00], ["user_id", 1]]
+  [1m[35m (30.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/46
+Completed 302 Found in 48ms (ActiveRecord: 31.8ms)
+
+
+Started GET "/gists/46" for 127.0.0.1 at 2014-05-13 23:03:34 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "46"]]
+  Rendered gists/show.html.erb within layouts/application (155.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 171ms (Views: 168.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/46" for 127.0.0.1 at 2014-05-13 23:04:05 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "46"]]
+  Rendered gists/show.html.erb within layouts/application (10.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:04:07 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (11.8ms)
+  Rendered gists/new.html.erb within layouts/application (20.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 23:04:12 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"asdasd", "lang"=>"ruby", "description"=>"asdsad", "status"=>"aaaa"}, "commit"=>"Create Gist"}
+Unpermitted parameters: status
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Tue, 13 May 2014 21:04:12 UTC +00:00], ["description", "asdsad"], ["lang", "ruby"], ["snippet", "asdasd"], ["updated_at", Tue, 13 May 2014 21:04:12 UTC +00:00], ["user_id", 1]]
+  [1m[36m (60.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists/47
+Completed 302 Found in 69ms (ActiveRecord: 62.1ms)
+
+
+Started GET "/gists/47" for 127.0.0.1 at 2014-05-13 23:04:12 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "47"]]
+  Rendered gists/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+  [1m[36mGist Load (2.4ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:06:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (256.4ms)
+  Rendered gists/index.html.erb within layouts/application (261.0ms)
+Completed 200 OK in 527ms (Views: 465.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:06:09 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (14.1ms)
+  Rendered gists/new.html.erb within layouts/application (18.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 23:06:15 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"dfh", "lang"=>"ruby", "description"=>"adsa", "status"=>"private"}, "commit"=>"Create Gist"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 21:06:15 UTC +00:00], ["description", "adsa"], ["lang", "ruby"], ["snippet", "dfh"], ["status", "private"], ["updated_at", Tue, 13 May 2014 21:06:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (102.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/48
+Completed 302 Found in 117ms (ActiveRecord: 106.3ms)
+
+
+Started GET "/gists/48" for 127.0.0.1 at 2014-05-13 23:06:15 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "48"]]
+  Rendered gists/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:06:17 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (23.2ms)
+  Rendered gists/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 56ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists"
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:06:50 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (14.8ms)
+  Rendered gists/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 48ms (Views: 32.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:08:29 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (16.8ms)
+  Rendered gists/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 51ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-05-13 23:08:33 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (8.8ms)
+  Rendered gists/new.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 23:08:40 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"public", "lang"=>"asdsa", "description"=>"asdsad", "status"=>"public"}, "commit"=>"Create Gist"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 13 May 2014 21:08:40 UTC +00:00], ["description", "asdsad"], ["lang", "asdsa"], ["snippet", "public"], ["status", "public"], ["updated_at", Tue, 13 May 2014 21:08:40 UTC +00:00], ["user_id", 1]]
+  [1m[36m (113.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists/49
+Completed 302 Found in 124ms (ActiveRecord: 114.4ms)
+
+
+Started GET "/gists/49" for 127.0.0.1 at 2014-05-13 23:08:41 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "49"]]
+  Rendered gists/show.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (Traceback (most recent call last):
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 303, in start
+    res = self.get_data(method, lexer, args, kwargs, text)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 171, in get_data
+    res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts))
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 122, in highlight_text
+    lexer = self.return_lexer(lexer, args, kwargs, code)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 79, in return_lexer
+    return lexers.get_lexer_by_name(lexer, **inputs)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/vendor/pygments-main/pygments/lexers/__init__.py", line 81, in get_lexer_by_name
+    raise ClassNotFound('no lexer for alias %r found' % _alias)
+ClassNotFound: no lexer for alias 'asdsa' found
+):
+    2: 
+    3: <p>
+    4:   <strong>Snippet:</strong>
+    5:   <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/gists/show.html.erb:5:in `_app_views_gists_show_html_erb__253424850__622619048'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.4ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-05-13 23:08:50 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "gist"=>{"snippet"=>"public", "lang"=>"ruby", "description"=>"asdsad", "status"=>"public"}, "commit"=>"Create Gist"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 21:08:50 UTC +00:00], ["description", "asdsad"], ["lang", "ruby"], ["snippet", "public"], ["status", "public"], ["updated_at", Tue, 13 May 2014 21:08:50 UTC +00:00], ["user_id", 1]]
+  [1m[35m (42.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/50
+Completed 302 Found in 52ms (ActiveRecord: 43.3ms)
+
+
+Started GET "/gists/50" for 127.0.0.1 at 2014-05-13 23:08:50 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "50"]]
+  Rendered gists/show.html.erb within layouts/application (129.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:08:52 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (43.5ms)
+  Rendered gists/index.html.erb within layouts/application (47.7ms)
+Completed 500 Internal Server Error in 59ms
+
+ActionView::Template::Error (Traceback (most recent call last):
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 303, in start
+    res = self.get_data(method, lexer, args, kwargs, text)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 171, in get_data
+    res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts))
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 122, in highlight_text
+    lexer = self.return_lexer(lexer, args, kwargs, code)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 79, in return_lexer
+    return lexers.get_lexer_by_name(lexer, **inputs)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/vendor/pygments-main/pygments/lexers/__init__.py", line 81, in get_lexer_by_name
+    raise ClassNotFound('no lexer for alias %r found' % _alias)
+ClassNotFound: no lexer for alias 'asdsa' found
+):
+    1: <% gists.each do |gist| %>
+    2: 	<div class="jumbotron">
+    3:      	<h1 class="naglowek"><%= gist.description %> (<%= gist.lang %>)</h1>
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>
+    6:       		<a href='/download/<%= gist.id %>'><button type="button" class="btn btn-sm btn-primary">Download</button></a>
+    7:       		<% if current_user.id == gist.user_id %>
+  app/views/shared/_gists.html.erb:4:in `block in _app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb___864082303__619733768'
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:08:52 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (161.5ms)
+  Rendered gists/index.html.erb within layouts/application (162.3ms)
+Completed 500 Internal Server Error in 179ms
+
+ActionView::Template::Error (Traceback (most recent call last):
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 303, in start
+    res = self.get_data(method, lexer, args, kwargs, text)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 171, in get_data
+    res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts))
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 122, in highlight_text
+    lexer = self.return_lexer(lexer, args, kwargs, code)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 79, in return_lexer
+    return lexers.get_lexer_by_name(lexer, **inputs)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/vendor/pygments-main/pygments/lexers/__init__.py", line 81, in get_lexer_by_name
+    raise ClassNotFound('no lexer for alias %r found' % _alias)
+ClassNotFound: no lexer for alias 'asdsa' found
+):
+    1: <% gists.each do |gist| %>
+    2: 	<div class="jumbotron">
+    3:      	<h1 class="naglowek"><%= gist.description %> (<%= gist.lang %>)</h1>
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>
+    6:       		<a href='/download/<%= gist.id %>'><button type="button" class="btn btn-sm btn-primary">Download</button></a>
+    7:       		<% if current_user.id == gist.user_id %>
+  app/views/shared/_gists.html.erb:4:in `block in _app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb___864082303__619733768'
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:09:02 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (196.3ms)
+  Rendered gists/index.html.erb within layouts/application (196.9ms)
+Completed 500 Internal Server Error in 213ms
+
+ActionView::Template::Error (Traceback (most recent call last):
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 303, in start
+    res = self.get_data(method, lexer, args, kwargs, text)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 171, in get_data
+    res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts))
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 122, in highlight_text
+    lexer = self.return_lexer(lexer, args, kwargs, code)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 79, in return_lexer
+    return lexers.get_lexer_by_name(lexer, **inputs)
+  File "/home/kuba/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/vendor/pygments-main/pygments/lexers/__init__.py", line 81, in get_lexer_by_name
+    raise ClassNotFound('no lexer for alias %r found' % _alias)
+ClassNotFound: no lexer for alias 'asdsa' found
+):
+    1: <% gists.each do |gist| %>
+    2: 	<div class="jumbotron">
+    3:      	<h1 class="naglowek"><%= gist.description %> (<%= gist.lang %>)</h1>
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>
+    6:       		<a href='/download/<%= gist.id %>'><button type="button" class="btn btn-sm btn-primary">Download</button></a>
+    7:       		<% if current_user.id == gist.user_id %>
+  app/views/shared/_gists.html.erb:4:in `block in _app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb___864082303__619733768'
+  app/controllers/gists_controller.rb:8:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.4ms)
+  [1m[36mGist Load (1.9ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  [1m[35mGist Load (6.7ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", 49]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 49]]
+  [1m[36m (54.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-05-13 23:09:32 +0200
+Processing by GistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 1 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (187.1ms)
+  Rendered gists/index.html.erb within layouts/application (188.1ms)
+Completed 200 OK in 216ms (Views: 203.2ms | ActiveRecord: 0.8ms)
+  [1m[35mGist Load (1.0ms)[0m  SELECT "gists".* FROM "gists"
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-05-13 23:10:07 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:10:07 +0200
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-05-13 23:10:07 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:10:07 +0200
+Processing by GistsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/gists_controller.rb:7:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:11:12 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 0 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (11.0ms)
+  Rendered gists/index.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    4:       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
+    5:       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>
+    6:       		<a href='/download/<%= gist.id %>'><button type="button" class="btn btn-sm btn-primary">Download</button></a>
+    7:       		<% if current_user.id == gist.user_id %>
+    8:       		<%= link_to gist, method: :delete, data: {confirm: 'Are you sure?' } do %><button type="button" class="btn btn-sm btn-danger">Delete</button><% end %></p>  <% end %>    		
+    9:      </div>
+   10: <% end %>
+  app/views/shared/_gists.html.erb:7:in `block in _app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/shared/_gists.html.erb:1:in `each'
+  app/views/shared/_gists.html.erb:1:in `_app_views_shared__gists_html_erb__170921063__618582158'
+  app/views/gists/index.html.erb:2:in `_app_views_gists_index_html_erb___864082303__619733768'
+  app/controllers/gists_controller.rb:12:in `index'
+
+
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/kuba/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:11:52 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 0 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (13.4ms)
+  Rendered gists/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 38ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2014-05-13 23:12:01 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 45ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-13 23:12:15 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "user"=>{"email"=>"daniel@daniel.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'daniel@daniel.pl' LIMIT 1
+Binary data inserted for `string` type on column `password_hash`
+Binary data inserted for `string` type on column `password_salt`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_hash", "password_salt", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 13 May 2014 21:12:15 UTC +00:00], ["email", "daniel@daniel.pl"], ["password_hash", "$2a$10$Ocv0ueS/qu7U5LOdTVzsMOZhsUtGLNAZ.Wq/ZYOkoXIlOMcrjZ2Ei"], ["password_salt", "$2a$10$Ocv0ueS/qu7U5LOdTVzsMO"], ["updated_at", Tue, 13 May 2014 21:12:15 UTC +00:00]]
+  [1m[35m (19.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 147ms (ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:12:15 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (user_id = 0 OR status = 'public') LIMIT 10 OFFSET 0[0m
+  Rendered shared/_gists.html.erb (1.7ms)
+  Rendered gists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 23:15:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/kuba/my_gists/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" WHERE (user_id = 0 OR status = 'public') LIMIT 10 OFFSET 0
+  Rendered shared/_gists.html.erb (207.2ms)
+  Rendered gists/index.html.erb within layouts/application (217.5ms)
+Completed 200 OK in 524ms (Views: 455.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2014-05-13 23:15:41 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 86ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-13 23:15:44 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "user"=>{"email"=>"sadsada", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'sadsada' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 38ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-13 23:15:57 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "user"=>{"email"=>"sadsada@wp.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'sadsada@wp.pl' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-13 23:16:02 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxpjdUeyAeLPjyXYPp5CLdkPuw651aOyrs+hnV2mhEo=", "user"=>{"email"=>"sadsada@wp", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'sadsada@wp' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.3ms)
