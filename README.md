@@ -26,6 +26,9 @@ will_paginate, '~> 3.0.5'
 simple_form, '~> 3.0.1'
 bcrypt
 validates_email_format_of
+execjs
+therubyracer
+sprockets '<= 2.11.0'
 ~~~
 
 #Konta do logowania
