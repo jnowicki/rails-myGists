@@ -24,4 +24,8 @@ bcrypt
 validates_email_format_of
 ~~~
 
+#Konta do logowania
+* login: kubavic@interia.pl haslo: 123
+* login: daniel@interia.pl haslo: 123
+
 #[Server Link](http://mygists.kubavic.vdl.pl/)
