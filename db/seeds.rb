@@ -21,12 +21,12 @@ public static void reset(Pole[][] plansza, Robot robot) {
 	{snippet: "
 int rozmX = 5;
 int rozmY = 5;
-int udane = 0;", lang: "java", description: "Dane wejsciowe", user_id: 0, status: 'public'},
+int udane = 0;", lang: "java", description: "Dane wejsciowe", user_id: 1, status: 'public'},
 	{snippet: "
 public Form1()
 {
 	InitializeComponent();
-}", lang: "c#", description: "Inicjalizacja komponentów", user_id: 0, status: 'public'},
+}", lang: "c#", description: "Inicjalizacja komponentów", user_id: 1, status: 'public'},
 	{snippet: "case class Link(url: String, depth: Int)
 case class GetRanking(url: String, depth: Int, client: ActorRef)
 case class Get(url: String, level: Int)
@@ -34,12 +34,12 @@ case class Hrefs(hrefs: List[String], level: Int)
 case class Ranking(ranking: List[(String, Int)])
 case object ShutDown", lang: "scala", description: "Przykład użycia case class"},
 	{snippet: "for(int i = 0; i<1000; i++){
-		printf('jestem najlepszy!')}", lang: "c", description: "Jestem najlepszy", user_id: 0, status: 'public'},
-	{snippet: "console.log('przykładowe logi');", lang: "javascript", description: "logi w js", user_id: 0, status: 'public'},
+		printf('jestem najlepszy!')}", lang: "c", description: "Jestem najlepszy", user_id: 2, status: 'public'},
+	{snippet: "console.log('przykładowe logi');", lang: "javascript", description: "logi w js", user_id: 1, status: 'public'},
 	{snippet: "
 def nazwa
 	i=0 
-end", lang: "ruby", description: "Funkcje w ruby", user_id: 0, status: 'public'},
+end", lang: "ruby", description: "Funkcje w ruby", user_id: 2, status: 'public'},
 	{snippet: "require 'roo'
      
     def fetch_excel_data
@@ -52,11 +52,15 @@ end", lang: "ruby", description: "Funkcje w ruby", user_id: 0, status: 'public'}
      
     x = Class.create(:db_column1 => db_column1, :db_column2 => db_column2, :db_column3 => db_column3)
      
-    end", lang: "ruby", description: "Generowanie bazy danych z XLS", user_id: 0, status: 'public'},
+    end", lang: "ruby", description: "Generowanie bazy danych z XLS", user_id: 1, status: 'public'},
 	{snippet: "
 books.each do |attr|
 	Book.find_or_create_by(default)
-end", lang: "ruby", description: "Zasianie ziarnia", user_id: 0, status: 'public'},
+end", lang: "ruby", description: "Zasianie ziarnia", user_id: 1, status: 'public'},
+	{snippet: "String a = String.valueOf(2);   //integer to numeric string
+int i = Integer.parseInt(a);", lang: "java", description: "Zamiana int na string i odwrotnie", user_id: 2, status: 'public'},
+	{snippet: "String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();", lang: "java", description: "Nazwa aktualnej metody", user_id: 1, status: 'public'},
+	{snippet: "var DateTime = DateTime.Now ", lang: "c#", description: "Aktualna data", user_id: 1, status: 'public'},
 
 ]
 

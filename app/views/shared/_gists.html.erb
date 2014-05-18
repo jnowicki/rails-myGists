@@ -1,6 +1,6 @@
 <% gists.each do |gist| %>
 	<div class="jumbotron">
-     	<h1 class="naglowek"><%= gist.description %> (<%= gist.lang %>)</h1>
+     	<h2 class="naglowek"><%= gist.description %> (<%= gist.lang %>)</h2>
       	<p class="snip"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></p>
       	<p><a href='<%= edit_gist_path(gist) %>'><button type="button" class="btn btn-sm btn-success">Edit</button></a>
       		<a href='/download/<%= gist.id %>'><button type="button" class="btn btn-sm btn-primary">Download</button></a>
