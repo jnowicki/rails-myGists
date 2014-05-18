@@ -29,6 +29,7 @@ class GistsController < ApplicationController
 
   # GET /gists/1/edit
   def edit
+    @status = ['public', 'private']
   end
 
   # POST /gists
