@@ -11,6 +11,10 @@ Dodałem:
 * reponsywny widok
 * logowanie i przypisanie gistów do usera
 * publiczne gisty widoczne dla wszystkich
+* prywatne widoczne tylko dla danego usera
+* testy
+* mozliwosc sciagniecia snippeta jako plik
+* generowanie danych za pomoca rake db:seed
 
 #Gemy:
 ~~~
