@@ -24,4 +24,4 @@ bcrypt
 validates_email_format_of
 ~~~
 
-#[Heroku Link](https://just-some-gists.herokuapp.com)
+#[Server Link](http://mygists.kubavic.vdl.pl/)

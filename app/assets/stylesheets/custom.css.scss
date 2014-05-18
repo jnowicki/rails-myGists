@@ -112,3 +112,13 @@ body {
 .back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
 }
+
+.helpbar {
+  position: fixed;
+  top:2em;
+  left: 5px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  padding: 1em;
+}
