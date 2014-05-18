@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Gists" do
+describe "Users" do
 	subject { page }
 
 	describe "new" do
